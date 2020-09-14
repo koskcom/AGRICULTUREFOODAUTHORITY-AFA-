@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:padding="@dimen/margin_normal"
+    tools:context="co.ke.bsl.ui.views.activities.components.TeaPackerAcivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isDisplayedProminentSigns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Displayed prominent signs" />
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Remarks [Minor Must]*"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etDisplayedProminentSignsRemarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isDisplayedPromineSpecifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Displayed prominent produce specifications" />
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Remarks [Major Must]*"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etDisplayedPromineSpecificationsRemarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/isStorageAreaOfPackagingMaterial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Storage area of packaging material" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Remarks [Major Must]*"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etStorageAreaOfPackagingMaterialRemarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/isProductsGraded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Is products graded according to produce source" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Remarks [Major Must]*"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etProductsGradedRemarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/isProduceFollowingFIFO"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Are produce following first in first out policy" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Remarks [Major Must]*"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etProduceFollowingFIFORemarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isAcquisisionOfProduceCrates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Acquisition of produce crates proof(receipts/contracts)" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Remarks [Major Must]*"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etAcquisisionOfProduceCratesRemarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isStorageAreaSafe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="is the storage area safe,hygiene,free from dust" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Remarks [Major Must]*"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etStorageAreaSafeRemarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Any Other Comment	"
+                android:textStyle="normal" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etOtherComments"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

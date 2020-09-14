@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:padding="@dimen/margin_normal"
+    tools:context="co.ke.bsl.ui.views.activities.components.PyrethrumInspectionActivity">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/ch_title_deed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/a_title_deed_an_allotment_letter_or_lease_agreement" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/evidence"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/ettitle_deed_evidence"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:hint="Evidence"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remaks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/ettitle_deed_remarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:hint="Remarks"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/ch_total_acreage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/total_acreage_under_pyrethrum" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/evidence"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/ettotal_acreage_evidence"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:hint="Evidence"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remaks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/ettotal_acreage_remarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:hint="Remarks"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/ch_acreage_available"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/acreage_available_for_expansion" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/evidence"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etacreage_available_evidence"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:hint="Evidence"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remaks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etacreage_available_remarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:hint="Remarks"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/ch_suitability_of_the_land"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/suitability_of_the_land_site_for_establishment_of_a_nursery" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/evidence"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etsuitability_of_the_land_evidence"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:hint="Evidence"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remaks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etsuitability_of_the_land_remarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:hint="Remarks"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/ch_reliable_supply"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/a_reliable_supply_of_clean_water_has_water_been_tested" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/evidence"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etreliable_supply_evidence"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:hint="Evidence"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remaks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etreliable_supply_remarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:hint="Remarks"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

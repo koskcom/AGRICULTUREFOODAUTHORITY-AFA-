@@ -1,0 +1,458 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.ke.bsl.sisdo.activity.MollassesDailyReturnStep6Activity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background1"
+        android:orientation="vertical" >
+<!--
+        <include layout="@layout/title_bar" />
+-->
+
+
+          <TextView
+            android:id="@+id/outgrowers_pc"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/outgrowers_pc" />
+
+        <EditText
+            android:id="@+id/outgrowers_pc_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/outgrowers_pc"
+            android:inputType="text" />
+
+        <CheckBox
+            android:id="@+id/outgrowers_pc_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+           />
+
+
+        <TextView
+            android:id="@+id/outgrowers_pc_remarks"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/outgrowers_pc_remarks_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+
+   <!--     Type of returns-->
+
+
+        <TextView
+            android:id="@+id/outgrowers_r1"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/outgrowers_r1" />
+
+        <EditText
+            android:id="@+id/outgrowers_r1_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/outgrowers_r1"
+            android:inputType="text" />
+
+
+        <CheckBox
+            android:id="@+id/outgrowers_r1_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+
+        <TextView
+            android:id="@+id/remarks_outgrowers_r1"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/outgrowers_r1_remarks"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+    <!--    Cane Crushed Year to Date-->
+
+        <TextView
+            android:id="@+id/outgrowers_r2"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/outgrowers_r2" />
+
+        <EditText
+            android:id="@+id/outgrowers_r2_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/outgrowers_r2"
+            android:inputType="text" />
+
+
+        <CheckBox
+            android:id="@+id/outgrowers_r2_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+
+        <TextView
+            android:id="@+id/outgrowers_r2_zone"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/outgrowers_r2_remarks"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+<!--
+        Sugar Made for the Month
+-->
+
+
+        <TextView
+            android:id="@+id/outgrowers_r3"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/outgrowers_r3" />
+
+        <EditText
+            android:id="@+id/outgrowers_r3_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/outgrowers_r3"
+            android:inputType="text" />
+
+
+        <CheckBox
+            android:id="@+id/outgrowers_r3_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+
+        <TextView
+            android:id="@+id/remarks_outgrowers_r3"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/outgrowers_r3_remarks"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+
+<!--
+        Sugar Made Year to Date
+-->
+
+        <TextView
+            android:id="@+id/nucleus_estate_pc"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/nucleus_estate_pc" />
+
+        <EditText
+            android:id="@+id/nucleus_estate_pc_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/nucleus_estate_pc"
+            android:inputType="text" />
+
+
+        <CheckBox
+            android:id="@+id/nucleus_estate_pc_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+
+        <TextView
+            android:id="@+id/remarks_nucleus_estate_pc"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/nucleus_estate_pc_remarks"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+
+<!--
+        Nucleus Estate R1
+-->
+
+        <TextView
+            android:id="@+id/nucleus_estate_r1"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/nucleus_estate_r1"/>
+
+        <EditText
+            android:id="@+id/nucleus_estate_r1_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/nucleus_estate_r1"
+            android:inputType="text" />
+
+
+        <CheckBox
+            android:id="@+id/nucleus_estate_r1_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+
+        <TextView
+            android:id="@+id/remarks_nucleus_estate_r1"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/month_nucleus_estate_r1"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+
+
+
+        <TextView
+            android:id="@+id/nucleus_estate_r2"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/nucleus_estate_r2"/>
+
+        <EditText
+            android:id="@+id/nucleus_estate_r2_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/nucleus_estate_r1"
+            android:inputType="text" />
+
+
+        <CheckBox
+            android:id="@+id/nucleus_estate_r2_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+
+        <TextView
+            android:id="@+id/remarks_nucleus_estate_r2"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/remarks_nucleus_estate_r2_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+
+<!--        Nucleus Estate R3-->
+
+
+        <TextView
+            android:id="@+id/nucleus_estate_r3"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/nucleus_estate_r3"/>
+
+        <EditText
+            android:id="@+id/nucleus_estate_r3_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/nucleus_estate_r1"
+            android:inputType="text" />
+
+
+        <CheckBox
+            android:id="@+id/nucleus_estate_r3_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+
+        <TextView
+            android:id="@+id/remarks_nucleus_estate_r3"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/remarks_nucleus_estate_r3_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+
+        <Button
+            android:id="@+id/save"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:onClick="buttonClickListener"
+            android:text="@string/next" />
+
+        <Button
+            android:id="@+id/next"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="buttonClickListener"
+            android:text="@string/cancel_label" />
+    </LinearLayout>
+
+</ScrollView>

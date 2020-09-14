@@ -1,0 +1,134 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.ke.bsl.activity.FreshMemberActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background1"
+        android:orientation="vertical" >
+    <!--    <include layout="@layout/title_bar" />-->
+
+
+        <!-- <include layout="@layout/title_bar" /> -->
+
+        <TextView
+            android:id="@+id/document_no"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/document_no" />
+
+        <EditText
+            android:id="@+id/document_no_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Document No"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/document_date"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/document_date" />
+
+        <EditText
+            android:id="@+id/document_date_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Document Date"
+            android:inputType="date" />
+
+        <TextView
+            android:id="@+id/city"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/city" />
+
+
+        <Spinner
+            android:id="@+id/city_text"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp" />
+
+
+        <TextView
+            android:id="@+id/survey_ending"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/survey_ending" />
+
+        <EditText
+            android:id="@+id/survey_ending_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:clickable="true"
+            android:onClick="pickDate"
+            android:longClickable="false"
+            android:focusable="false"
+            android:layout_marginTop="15dp"
+            android:hint="End Date"
+            android:inputType="number" />
+
+
+
+        <TextView
+            android:id="@+id/survey_type"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/type_of_sugar_prices_survey" />
+
+        <Spinner
+            android:id="@+id/type_of_sugar_prices_survey_text"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp" />
+
+
+        <Button
+            android:id="@+id/save"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:background="@color/afayellow"
+            android:onClick="buttonClickListener"
+            android:text="@string/next" />
+
+        <Button
+            android:id="@+id/reset"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:background="@color/afayellow"
+            android:onClick="buttonClickListener"
+            android:text="@string/cancel_label" />
+    </LinearLayout>
+
+</ScrollView>

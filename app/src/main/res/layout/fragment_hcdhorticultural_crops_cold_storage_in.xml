@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:padding="@dimen/margin_normal"
+    tools:context="co.ke.bsl.ui.views.activities.components.TeaPackerAcivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Product Category"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/ssProductCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="2dp"
+                    android:overlapAnchor="false"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Product"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/ssProduct"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="2dp"
+                    android:overlapAnchor="false"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Cold Room No.*"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etColdRoomNo"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Date brought in*"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etDateBrought"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:clickable="true"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/pay_category"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                    android:id="@+id/ssPayCategory"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_margin="2dp"
+                    android:overlapAnchor="false"
+                    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Packaging Material"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etPackagingMaterial"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Weight In (Kgs)"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etWeightIn"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="number"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Quality"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etQuality"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

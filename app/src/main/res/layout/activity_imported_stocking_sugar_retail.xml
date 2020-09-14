@@ -1,0 +1,127 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.ke.bsl.activity.SugarSurveyRetailStockedImportedActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background1"
+        android:orientation="vertical" >
+
+<!--
+- <include layout="@layout/title_bar" />
+-->
+
+
+
+        <TextView
+            android:id="@+id/importedSugarCoutryOfOrigin"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/county_of_origin" />
+
+
+        <Spinner
+            android:id="@+id/importedSugarCoutryOfOrigin_text"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp" />
+
+
+        <TextView
+            android:id="@+id/stockingImportedSugarRetialPriceof20kg"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/price_of_20kg" />
+
+        <EditText
+            android:id="@+id/stockingImportedSugarRetialPriceof20kg_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/price_of_24kg"
+            android:inputType="number" />
+
+
+
+        <TextView
+            android:id="@+id/stockingImportedSugarRetialPriceOf24kg"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/price_of_24kg" />
+
+        <EditText
+            android:id="@+id/stockingImportedSugarRetialPriceOf24kg_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/price_of_24kg"
+            android:inputType="number" />
+
+
+        <TextView
+            android:id="@+id/stockingImportedSugarRetialPriceOf50kg"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/price_of_50kg" />
+
+        <EditText
+            android:id="@+id/stockingImportedSugarRetialPriceOf50kg_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/price_of_50kg"
+            android:inputType="number" />
+
+
+            <Button
+                android:id="@+id/next"
+                style="@style/CustomButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:onClick="buttonClickListener"
+                android:text="@string/submit" />
+
+        <Button
+            android:id="@+id/add_more"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:onClick="buttonClickListener"
+            android:text="@string/addmore" />
+
+
+     <!--   <Button
+            android:id="@+id/reset"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:onClick="buttonClickListener"
+            android:text="@string/skip" />-->
+    </LinearLayout>
+
+</ScrollView>

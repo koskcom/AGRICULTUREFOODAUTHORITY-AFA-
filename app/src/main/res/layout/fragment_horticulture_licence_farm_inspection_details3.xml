@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:padding="@dimen/margin_normal"
+    tools:context="co.ke.bsl.ui.views.activities.components.HorticultureLicenceFarmInspectionActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pesticide_application_personnel"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isTrainingSchedules"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/training_schedules_and_certificates" />
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etHLFITrainingSchedules"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isTherePestManagement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/is_there_pest_management_protocol_for_this_pests" />
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etHLFITherePestManagement"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isThereEvidenceOnScouring"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/is_there_evidence_on_scounting_of_these_pests" />
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etHLFIThereEvidenceOnScouring"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isEvidenceInControlOfPests"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/evidence_in_control_of_pests" />
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etHLFIEvidenceInControlOfPests"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/field_produce_handling_facility"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isCollectionShedForFarmers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/is_there_a_collection_shed_for_the_farmers" />
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etHLFICollectionShedForFarmers"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isCollectionAndSortingShed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/is_the_collection_and_sorting_shed_secured" />
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etHLFICollectionAndSortingShed"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isAppropriateHygieneInstructions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/appropriate_hygiene_instructions_collection_sorting_facility" />
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etHLFIAppropriateHygieneInstructions"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isGradingTables"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/grading_tables_made_of_food_grade_materials" />
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etHLFIGradingTables"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isShedHaveRunningWater"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/does_the_shed_have_running_water_for_handwashing" />
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etHLFIShedHaveRunningWater"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isToiletAtFacility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/is_the_a_toilet_at_the_facility" />
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etHLFIToiletAtFacility"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isPPEForGraders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/is_there_ppe_for_graders_at_the_shed" />
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etHLFIPPEForGraders"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isStorageAreaForGraders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/is_ther_storage_area_for_the_graded_products" />
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etHLFIStorageAreaForGraders"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isPlasticCrates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Are there plastic crates and pallets at the collection" />
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etHLFIPlasticCrates"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

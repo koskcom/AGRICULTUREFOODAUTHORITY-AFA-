@@ -1,0 +1,593 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:padding="@dimen/margin_normal"
+    tools:context=".ui.views.activities.components.HarvestReturnsInspectionActivity">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/select_return"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+                android:id="@+id/ssreturns"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_margin="2dp"
+                android:overlapAnchor="false"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/loginScreenHints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/date_of_return"
+                    android:textStyle="normal" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_gray"
+                    android:orientation="horizontal">
+                    <co.ke.bsl.util.CustomEditText
+                        android:id="@+id/etdate_of_return"
+                        style="@style/editTextViewAll"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/edit_box_height"
+                        android:layout_weight="5.5"
+                        android:background="@android:color/transparent"
+                        android:hint="Date of returns"
+                        android:inputType="textCapWords"
+                        app:font_name="regular" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/loginScreenHints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/miller"
+                    android:textStyle="normal" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_gray"
+                    android:orientation="horizontal">
+                    <co.ke.bsl.util.CustomEditText
+                        android:id="@+id/etmiller"
+                        style="@style/editTextViewAll"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/edit_box_height"
+                        android:layout_weight="5.5"
+                        android:hint="@string/miller"
+                        android:background="@android:color/transparent"
+                        app:font_name="regular" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/chmiller"
+                        style="@style/CustomEditText"
+                        android:layout_width="wrap_content"
+                        android:text="@string/miller"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/remaks"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etremarks_miller"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:hint="Remarks"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/loginScreenHints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/type_of_returns"
+                    android:textStyle="normal" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_gray"
+                    android:orientation="horizontal">
+                    <co.ke.bsl.util.CustomEditText
+                        android:id="@+id/etreturns_type"
+                        style="@style/editTextViewAll"
+                        android:layout_width="0dp"
+                        android:text="@string/type_of_returns"
+                        android:layout_height="@dimen/edit_box_height"
+                        android:layout_weight="5.5"
+                        android:background="@android:color/transparent"
+                        app:font_name="regular" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/chtype_of_returns"
+                        style="@style/CustomEditText"
+                        android:layout_width="wrap_content"
+                        android:text="@string/type_of_returns"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/remaks"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etremarks_type_of_return"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:hint="Remarks"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/loginScreenHints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/zone"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_gray"
+                    android:orientation="horizontal">
+
+                    <co.ke.bsl.util.CustomEditText
+                        android:id="@+id/etzone"
+                        style="@style/editTextViewAll"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/edit_box_height"
+                        android:layout_weight="5.5"
+                        android:background="@android:color/transparent"
+                        app:font_name="regular" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/zone_checkbox"
+                        style="@style/CustomEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/zone"
+                        android:layout_gravity="center_horizontal" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/remaks"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etremarks_zone"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:hint="Remarks"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/loginScreenHints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sugar_cane_varieties"
+                    android:textStyle="normal" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_gray"
+                    android:orientation="horizontal">
+                    <co.ke.bsl.util.CustomEditText
+                        android:id="@+id/etcane_varieties"
+                        style="@style/editTextViewAll"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/edit_box_height"
+                        android:layout_weight="5.5"
+                        android:hint="@string/sugar_cane_varieties"
+                        android:background="@android:color/transparent"
+                        app:font_name="regular" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/chcane_varieties"
+                        style="@style/CustomEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="@string/sugar_cane_varieties" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/remaks"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etremarks_cane_varieties"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:hint="Remarks"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/loginScreenHints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/calender_year"
+                    android:textStyle="normal" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_gray"
+                    android:orientation="horizontal">
+
+                    <co.ke.bsl.util.CustomEditText
+                        android:id="@+id/etcalender_year"
+                        style="@style/editTextViewAll"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/edit_box_height"
+                        android:layout_weight="5.5"
+                        android:background="@android:color/transparent"
+                        app:font_name="regular" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/chcalender_year"
+                        style="@style/CustomEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="@string/calender_year" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/remaks"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etremarks_calender_year"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:hint="Remarks"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+        </LinearLayout>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <TextView
+                    style="@style/loginScreenHints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/month"
+                    android:textStyle="normal" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_gray"
+                    android:orientation="horizontal">
+                    <co.ke.bsl.util.CustomEditText
+                        android:id="@+id/etmonth"
+                        style="@style/editTextViewAll"
+                        android:layout_width="0dp"
+                        android:layout_height="@dimen/edit_box_height"
+                        android:layout_weight="5.5"
+                        android:hint="@string/month"
+                        android:background="@android:color/transparent"
+                        app:font_name="regular" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/month_checkbox"
+                        style="@style/CustomEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:hint="@string/month" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/remaks"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etremarks_month"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:hint="Remarks"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

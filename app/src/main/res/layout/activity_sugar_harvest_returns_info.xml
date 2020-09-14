@@ -1,0 +1,352 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.ke.bsl.sisdo.activity.MollassesDailyReturnStep6Activity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background1"
+        android:orientation="vertical" >
+        <include layout="@layout/title_bar" />
+
+
+          <TextView
+            android:id="@+id/miller"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/miller" />
+
+        <EditText
+            android:id="@+id/miller_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/miller"
+            android:inputType="text" />
+
+        <CheckBox
+            android:id="@+id/miller_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+           />
+
+
+        <TextView
+            android:id="@+id/miller_remarks"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/nature_causes_of_wastage_remarks_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+
+   <!--     Type of returns-->
+
+
+        <TextView
+            android:id="@+id/type_of_returns"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/type_of_returns" />
+
+        <EditText
+            android:id="@+id/type_of_returns_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/type_of_returns"
+            android:inputType="text" />
+
+
+        <CheckBox
+            android:id="@+id/type_of_returns_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+
+        <TextView
+            android:id="@+id/remarks_type_of_returns"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/type_of_returns_remarks"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+    <!--    Cane Crushed Year to Date-->
+
+        <TextView
+            android:id="@+id/zone"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/zone" />
+
+        <EditText
+            android:id="@+id/zone_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/zone"
+            android:inputType="text" />
+
+
+        <CheckBox
+            android:id="@+id/zone_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+
+        <TextView
+            android:id="@+id/remarks_zone"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/zone_remarks"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+<!--
+        Sugar Made for the Month
+-->
+
+
+        <TextView
+            android:id="@+id/sugarcane_variety"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/sugarcane_variety" />
+
+        <EditText
+            android:id="@+id/sugarcane_variety_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/sugarcane_variety"
+            android:inputType="text" />
+
+
+        <CheckBox
+            android:id="@+id/sugarcane_variety_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+
+        <TextView
+            android:id="@+id/remarks_sugarcane_variety"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/sugarcane_variety_remarks"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+
+<!--
+        Sugar Made Year to Date
+-->
+
+        <TextView
+            android:id="@+id/calender_year"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/calender_year" />
+
+        <EditText
+            android:id="@+id/calender_year_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/calender_year"
+            android:inputType="text" />
+
+
+        <CheckBox
+            android:id="@+id/calender_year_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+
+        <TextView
+            android:id="@+id/remarks_calender_year"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/calender_year_remarks"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+
+<!--
+        Factory Rated Capacity
+-->
+
+        <TextView
+            android:id="@+id/month"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/month" />
+
+        <EditText
+            android:id="@+id/month_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/month"
+            android:inputType="text" />
+
+
+        <CheckBox
+            android:id="@+id/month_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+
+        <TextView
+            android:id="@+id/remarks_month"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/month_remarks"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+
+
+        <Button
+            android:id="@+id/save"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:onClick="buttonClickListener"
+            android:text="@string/next" />
+
+        <Button
+            android:id="@+id/next"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="buttonClickListener"
+            android:text="@string/cancel_label" />
+    </LinearLayout>
+
+</ScrollView>

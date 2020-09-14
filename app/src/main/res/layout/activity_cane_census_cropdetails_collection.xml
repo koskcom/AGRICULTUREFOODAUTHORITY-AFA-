@@ -1,0 +1,277 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.ke.bsl.activity.CaneCensusScoreCropDetailsActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background1"
+        android:orientation="vertical" >
+  <!--      <include layout="@layout/title_bar" />-->
+
+
+        <!-- <include layout="@layout/title_bar" /> -->
+
+
+       <TextView
+           android:id="@+id/AGEmonths"
+           style="@style/CustomAddLabel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="30dp"
+           android:text="@string/age_months" />
+
+
+       <EditText
+           android:id="@+id/AGE_text"
+           style="@style/CustomEditText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="15dp"
+           android:hint="@string/age_months"
+           android:inputType="number"
+           />
+
+        <TextView
+            android:id="@+id/CropClass"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/crop_class" />
+
+        <Spinner
+            android:id="@+id/CropClass_text"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp" />
+
+
+       <TextView
+           android:id="@+id/ExpectedTCH"
+           style="@style/CustomAddLabel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="30dp"
+           android:text="@string/expected_tch" />
+
+
+       <EditText
+           android:id="@+id/ExpectedTCH_text"
+           style="@style/CustomEditText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="15dp"
+           android:hint="@string/age_months"
+           android:enabled="false"
+           android:inputType="number"
+           />
+
+       <TextView
+           android:id="@+id/Variety"
+           style="@style/CustomAddLabel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="30dp"
+           android:text="@string/variety" />
+
+
+       <Spinner
+           android:id="@+id/Variety_text"
+           android:layout_width="280dp"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="15dp" />
+
+
+       <TextView
+           android:id="@+id/Hectares"
+           style="@style/CustomAddLabel"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="30dp"
+           android:text="@string/hectares" />
+
+
+
+       <EditText
+           android:id="@+id/Hectares_text"
+           style="@style/CustomEditText"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_gravity="center_horizontal"
+           android:layout_marginTop="15dp"
+           android:hint="@string/hectares"
+           android:inputType="numberDecimal"
+           />
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/CropDensity"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/crop_density" />
+
+        <Spinner
+            android:id="@+id/CropDensity_text"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp" />
+
+
+        <TextView
+            android:id="@+id/CropColour"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/crop_colour" />
+
+        <Spinner
+            android:id="@+id/CropColour_text"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp" />
+
+
+        <TextView
+            android:id="@+id/CropVigour"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/crop_vigour" />
+        <Spinner
+            android:id="@+id/CropVigour_text"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp" />
+
+
+
+
+        <TextView
+            android:id="@+id/PestsDiseaseandWeeds"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/pests_disease_and_weeds" />
+
+        <Spinner
+            android:id="@+id/PestsDiseaseandWeeds_text"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp" />
+
+
+
+        <!--    <TextView
+                android:id="@+id/SubTotal"
+                style="@style/CustomAddLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="@string/sub_total" />
+
+            <EditText
+                android:id="@+id/SubTotal_text"
+                style="@style/CustomEditText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:hint="@string/sub_total"
+                android:inputType="number"
+                />-->
+
+   <!--     <TextView
+            android:id="@+id/TCHtotals"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="TCH" />
+
+        <EditText
+            android:id="@+id/TCHtotals_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="TCH"
+            android:inputType="number"
+            />
+
+
+
+        <TextView
+            android:id="@+id/TotalTONS"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/total_tons" />
+
+        <EditText
+            android:id="@+id/TotalTONS_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/total_tons"
+            android:inputType="number"
+            />-->
+
+
+        <Button
+            android:id="@+id/save"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="buttonClickListener"
+            android:text="@string/submit" />
+
+        <Button
+            android:id="@+id/add_more"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="buttonClickListener"
+            android:text="@string/addmore" />
+<!--
+        <Button
+            android:id="@+id/clear"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="buttonClickListener"
+            android:text="@string/cancel_label" />-->
+    </LinearLayout>
+
+</ScrollView>

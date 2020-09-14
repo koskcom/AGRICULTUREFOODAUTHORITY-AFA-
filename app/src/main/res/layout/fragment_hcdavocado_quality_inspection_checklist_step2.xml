@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:padding="@dimen/margin_normal"
+    tools:context="co.ke.bsl.ui.views.activities.components.TeaPackerAcivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Maturity"
+            android:textAlignment="center"
+            android:textColor="@color/green"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isFuarteSkinGlossyShine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Does the skin have a glossy shine" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etFuarteSkinGlossyShineRemarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/isFuarteColorGreeWithYelowFint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Is the color green with yellow marks" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etFuarteColorGreeWithYelowFintRemarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isFuarteSkinTextureSmooth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Is the skin texture smooth at blossom" />
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etFuarteSkinTextureSmoothRemarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/isFuarteFleshColorCreamyYellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Is the flesh color creamy yellow" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etFuarteFleshColorCreamyYellowRemarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <CheckBox
+                android:id="@+id/isHassColorGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Is the color green to purple" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etHassColorGreenRemarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isHassSkinTextureRough"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Is the skin texture rough" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etHassSkinTextureRoughRemarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isHassFleshColorCreamy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Is the flesh color creamy" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etHassFleshColorCreamyRemarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isSkinColorGreenToYellow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Is the skin color green to yellow" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etSkinColorGreenToYellowRemarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isSkinSmoothAtBlossom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Is the skin smooth at blossom" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etSkinSmoothAtBlossomRemarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/isFleshColorCreamy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Is the flesh color creamy yellow" />
+
+
+            <TextView
+                style="@style/loginScreenHints"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="@string/remarks"
+                android:textStyle="normal" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_edit_text_gray"
+                android:orientation="horizontal">
+
+                <co.ke.bsl.util.CustomEditText
+                    android:id="@+id/etFleshColorCreamyRemarks"
+                    style="@style/editTextViewAll"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/edit_box_height"
+                    android:layout_weight="5.5"
+                    android:background="@android:color/transparent"
+                    android:inputType="textCapWords"
+                    app:font_name="regular" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</ScrollView>

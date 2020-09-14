@@ -1,0 +1,1396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.common.DashboardActivity"
+    tools:showIn="@layout/activity_dashboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_medium">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/logoutButton"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewAddCaneCensus"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_tractor" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cane Census Survey"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textsze"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewAddWholesaleSugarPricesSurvey"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_bag_of_sugar" />
+
+                        <TextView
+                            android:id="@+id/etDynamicEdittttt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wholesale Prices Survey"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewAddSugarRetailSugarPricesSurvey"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_retail_bag" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Retail Prices Survey."
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewAddSugarMillLicence"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_wholesale_prices_survey" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sugar Mill Licence"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewAddTeaPacker"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_green_tea" />
+
+                        <TextView
+                            android:id="@+id/etDynamicEditxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tea Packer Checklist"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewTeaWareHouseMan"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_warehouse" />
+
+                        <TextView
+                            android:id="@+id/etDynamicEditttt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="TeaWarehouseman Inspection"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+
+                    android:id="@+id/cardViewCoffeeNurseryCertificate"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            app:srcCompat="@drawable/ic_fields" />
+
+                        <TextView
+                            android:id="@+id/etDynamicEditxet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coffee Nursery Certificate Field Inspection Checklist"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/textsze"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewAddPulpingStationLicenceApplication"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_statistical_form" />
+
+                        <TextView
+                            android:id="@+id/etPulpingStation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pulping Station Licence Application (ATE) Checklist"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewAddCoffeePulpingLicApllPSL"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_leaf_" />
+
+                        <TextView
+                            android:id="@+id/etPulpingStationPSL"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pulping Station Licence Application (PSL) Checklist"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewCoffeeMillerLicenceApplication"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_coffee" />
+
+                        <TextView
+                            android:id="@+id/etCoffeeMiller"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coffee Miller Licence Application Checklist"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewCoffeeMnagementAgent"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_marketing" />
+
+                        <TextView
+                            android:id="@+id/etDynamicEditxxtt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coffee Management Agent Checklist"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewCoffeeGrowerMarketingAgent"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_growth" />
+
+                        <TextView
+                            android:id="@+id/etCoffeeGrowerMarketingAgent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/coffee_grower_marketing_agent_inspection"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewCoffeeCommercialMarketingAgent"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_cart" />
+
+                        <TextView
+                            android:id="@+id/etDynamicEditxxtjilhweuit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coffee Commercial Marketing Agent Inspection Checklist"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewCoffeeExporterDealerInspection"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_import_export" />
+
+                        <TextView
+                            android:id="@+id/etCoffeeExporterDealerInspection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Coffee Exporter/Dealer Inspection Checklist"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewHCDNurseryInspection"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_nursery_inspe" />
+
+                        <TextView
+                            android:id="@+id/etHCDNurseryInspection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Horticulture Nursery Inspection Checklist"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewHCDProduceTransportation"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_moving_truck" />
+
+                        <TextView
+                            android:id="@+id/etHCDproduceTransp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Horticultural Produce Transportation Checklist"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewHCDParkhouseWareHouseInspection"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_warehouse" />
+
+                        <TextView
+                            android:id="@+id/etDynamicEdixxtilweuit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Horticultural Packhouse/WareHouse Inspection"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewHCDLicenceFarmInspection"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_travel" />
+
+                        <TextView
+                            android:id="@+id/ethcdlicencefarmInspection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Horticultural Crops Export License Farm Inspection Checklist"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewHCDFlowerConsolidators"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_flower_consolidators" />
+
+                        <TextView
+                            android:id="@+id/etDynamicEditxxtilhweuit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Horticultural Flower Consolidators Desk Vetting Checklist"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewHCDFruitsVegetablesConsolidatosDeskvetting"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_fruits" />
+
+                        <TextView
+                            android:id="@+id/etDynamicEdixxtilweit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fruits and Vegetables Consolidators Desk Vetting Checklist"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewHCDFlowerExporterDeskVetting"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_workspace" />
+
+                        <TextView
+                            android:id="@+id/etflowerExporters"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Horticultural Flower Exporters Desk Vetting Checklist"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewFruitsVegetablesExportsDeskVettingChecklist"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_fruits_vegetables" />
+
+                        <TextView
+                            android:id="@+id/etCoffeeExDealerInspection"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fruits and Vegetables Exporters Desk Vetting Checklist"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewAvocadoQualityInspectionChecklist"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_avocado" />
+
+                        <TextView
+                            android:id="@+id/etFruitsVegetablesConsolidators"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Avocado Quality Inspection Checklist"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewHCDMangoQualityInspectionChecklistActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_mango" />
+
+                        <TextView
+                            android:id="@+id/etDynamicEixxtilwet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Mango Quality Inspection Checklist"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewHCDColdRoomTemperaturesRecordsActivity"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_temperature" />
+
+                        <TextView
+                            android:id="@+id/etDynamicEixtilwet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cold Room Temperature Records"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewHCDPersonalHygieneInspection"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_bathtub" />
+
+                        <TextView
+                            android:id="@+id/etFruitsVgeablesConsolidators"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Personal Hygiene Checklist"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewHorticulturalCropsColdStorageRegister"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_planting" />
+
+                        <TextView
+                            android:id="@+id/etFruitsVgetablesConsolidators"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Horticultural Crops Cold Storage Register"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewAddpyrethrumInspection"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_pyrethrum" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/commercial_nursery_operator_farm_inspection"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewNOCDMarketPriceSurvey"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_peanuts" />
+
+                        <TextView
+                            android:id="@+id/etNOCDMarketPriceSurvey"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nuts and Oil Market Prices Survey"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewCottonBuyingInspection"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_cotton_1" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cotton_buying_store_inspection_conformity_assessment"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewSisalfactoryInspection"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_factory_nspection" />
+
+                        <TextView
+                            android:id="@+id/etNOCDMarketPr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sisal_factory_inspection_conformity_assessment"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewCottonGinneryInspection"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_cotton_ginnery" />
+
+                        <TextView
+                            android:id="@+id/etNOCDMtPr"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cotton_ginnery_inspection_conformity_assessment"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewCottonLintClassingReport"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_cotton" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/cotton_lint_classing_report"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewSisalSpinningFactoryInspection"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:visibility="gone"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_sisal_inspection" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sisal_spinning_factory_inspection_conformity_assessment"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewFoodProcessing"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_food_processing" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Food Processing Inspection"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewFoodWarehouseInspection"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_food_warehouses" />
+
+                        <TextView
+                            android:id="@+id/etfood"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Food WareHouse Inspection"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardViewFoodCrop"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/card_height"
+                    android:layout_weight=".5"
+                    android:clickable="true"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    app:cardCornerRadius="@dimen/card_conner_radius"
+                    app:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_food_crop_export" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Food Crop Export Inspection"
+                            android:textAlignment="center"
+                            android:textSize="@dimen/textsze"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="60dp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:background="@drawable/bg_blue_button"
+        android:text="@string/sign_out"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:cornerRadius="8dp" />
+</RelativeLayout>

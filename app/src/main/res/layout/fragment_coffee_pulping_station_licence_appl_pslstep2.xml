@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:padding="@dimen/margin_normal"
+    tools:context="co.ke.bsl.ui.views.activities.components.SugarSurveyPricesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Inspection Details"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:textStyle="normal" />
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/area_under_coffee_acres"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etAreaUnderCoffee"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:inputType="number"
+                app:font_name="regular" />
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/pulping_machine_type"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etPulpingMachineType"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/loginScreenHints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Inspection Details"
+                    android:textAlignment="center"
+                    android:textColor="@color/green"
+                    android:textStyle="normal" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/isSkinDrying"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Are skin drying tables in good condition" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/remaks"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etSkinDryingremarks"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/isDryingTables"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Are drying tables in good condition" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/remaks"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etDryingTablesremarks"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/isFarmentationTanks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Are fermentation tanks in good condition" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/remaks"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etFarmentationTanksremarks"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/isSoakTanks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Are soak tanks in good condition" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/remaks"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etSoakTanksremarks"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/isParchmentBuniStore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="Is the Parchment/Buni store in good condition" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/remaks"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etParchmentBuniStoreremarks"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

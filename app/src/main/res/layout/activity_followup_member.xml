@@ -1,0 +1,140 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.ke.bsl.sisdo.activity.FollowUpActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background1"
+        android:orientation="vertical" >
+
+        <!-- <include layout="@layout/title_bar" /> -->
+
+        
+
+        <TextView
+            android:id="@+id/Supermarket_Shop"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/Supermarket_Shop" />
+
+        <EditText
+            android:id="@+id/Supermarket_Shop_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/Supermarket_Shop"
+            android:inputType="number" />
+
+
+        <TextView
+            android:id="@+id/Local_branded_sugar_1kg"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/Local_branded_sugar_1kg" />
+
+        <EditText
+            android:id="@+id/Local_branded_sugar_1kg_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/Local_branded_sugar_1kg"
+            android:inputType="number" />
+
+
+
+        <TextView
+            android:id="@+id/local_branded_sugar_2kg"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/local_branded_sugar_2kg" />
+
+        <EditText
+            android:id="@+id/local_branded_sugar_2kg_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/local_branded_sugar_2kg"
+            android:inputType="number" />
+
+
+
+
+        <TextView
+            android:id="@+id/local_sugar_50kg_bag"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/local_sugar_50kg_bag" />
+
+        <EditText
+            android:id="@+id/local_sugar_50kg_bag_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/local_sugar_50kg_bag"
+            android:inputType="number" />
+
+
+
+
+        <TextView
+            android:id="@+id/Imported_sugar_50kg_Bag"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/Imported_sugar_50kg_Bag" />
+
+        <EditText
+            android:id="@+id/Imported_sugar_50kg_Bag_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/Imported_sugar_50kg_Bag"
+            android:inputType="number" />
+
+
+        <Button
+            android:id="@+id/search"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:background="@color/afayellow"
+            android:onClick="buttonClickListener"
+            android:text="@string/save" />
+
+        <Button
+            android:id="@+id/reset"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:onClick="buttonClickListener"
+            android:text="@string/cancel_label" />
+    </LinearLayout>
+
+</ScrollView>

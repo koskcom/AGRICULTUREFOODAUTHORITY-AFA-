@@ -1,0 +1,1080 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="formSubHeader">
+
+        <!-- <item name="android:background">@drawable/customshape</item> -->
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold|normal</item>
+    </style>
+
+    <string name="hello">Choose one of the features below.</string>
+    <string name="description_logo">Demo</string>
+    <string name="description_about">About</string>
+    <string name="description_home">Home</string>
+    <string name="description_search">Search</string>
+    <string name="description_feature1">Feature 1</string>
+    <string name="description_feature2">Feature 2</string>
+    <string name="description_feature3">Feature 3</string>
+    <string name="description_feature4">Feature 4</string>
+    <string name="description_feature5">Feature 5</string>
+    <string name="description_feature6">Feature 6</string>
+    <string name="title_about">About</string>
+    <string name="title_activity_profile">Profile</string>
+    <string name="title_home">Home</string>
+    <string name="title_search">Search</string>
+    <string name="title_login">AFA FIELD APP</string>
+    <string name="title_feature1">My Account</string>
+    <string name="title_feature2">AFA Groups</string>
+    <string name="title_feature3">Sugar Directorate</string>
+    <string name="title_freshMember">Fresh Registrations</string>
+    <string name="title_feature4">Transactions</string>
+    <string name="title_feature5">Exit App</string>
+    <string name="title_feature6">Help</string>
+    <string name="default_intro">This is the default content view for an activity. Be sure to change your activity\'s onCreate method. Use setContentView on a custom layout.</string>
+    <string name="feature1_intro">Not Implemented.</string>
+    <string name="feature2_intro">Not Implemented</string>
+    <string name="feature3_intro">Not Implemented</string>
+    <string name="feature4_intro">Not Implemented.</string>
+    <string name="feature5_intro">Not Implemented</string>
+    <string name="feature6_intro">Not Implemented.</string>
+
+    <string name="about_introduction" translatable="false">AFA Mobile Field Application aids in conducting surveys and field inspections. Its integrated to AFA IMIS.
+              The Authority is the successor of former regulatory institutions in the sector that were merged into Directorates under the Authority, with the commencement of Crops Act, 2013 on 1st August 2014 , including Coffee Board of Kenya, Kenya Sugar Board, Tea Board of Kenya, Coconut Development Authority, Cotton Development Authority,
+                Sisal Board of Kenya, Pyrethrum Board of Kenya, Horticultural Crops Development Authority.</string>
+
+    <string name="about_page_description" translatable="false">The <b>Agriculture and Food Authority (AFA)</b> is a state corporation established through an Act of Parliament specifically, under section 3 of the Agriculture, Fisheries and Food Authority Act of 2013.\n\n <b>Vision: </b> \n To be a World Class Regulator in the Agriculture Sector \n\n <b>Mission:</b> \n To sustainably develop and promote scheduled crops value chains through effective regulation for economic growth \n\n <b>Core values: </b>\n The Authority is committed to excellent service delivery based of the following core values: \n\t Professionalism \n\t Integrity \n\t Customer focus \n\t Teamwork \n\t Innovativeness \n\n<b>Motto: </b>\n Our crops our wealth</string>
+
+    <string name="search_intro">Empty search</string>
+    <string name="app_name">AFA Mobile</string>
+    <string name="login_screen">Welcome to AFA Mobile Field</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_my_account">MyAccountActivity</string>
+    <string name="title_activity_change_pass">ChangePassActivity</string>
+    <string name="title_activity_group">GroupActivity</string>
+    <string name="title_activity_group_a">GroupAActivity</string>
+    <string name="title_activity_group_b">GroupBActivity</string>
+    <string name="title_activity_group_c">GroupCActivity</string>
+    <string name="title_activity_group_d">GroupDActivity</string>
+    <string name="title_activity_group_e">GroupEActivity</string>
+    <string name="title_activity_registrations">RegistrationsActivity</string>
+    <string name="title_activity_fresh_member">FreshMemberActivity</string>
+    <string name="title_activity_follow_up">FollowUpActivity</string>
+    <string name="title_activity_follow_up_info">FollowUpInfoActivity</string>
+    <string name="header">AFA  Mobile App</string>
+    <string name="fresh">Fresh Member Registration</string>
+    <string name="follow">Follow Up Registration</string>
+    <string name="group">AFA Groups-Select group to administer</string>
+    <string name="check">Check Available Group Members</string>
+    <string name="title_activity_login">FieldLogin</string>
+    <string name="groupsList_title">Group List</string>
+    <string name="failed_to_download_status">Failed to download the List</string>
+    <string name="userInfo_errorRetrievingUserInfo">Failed to retrieve information</string>
+
+    <string name="userInfo_errorPersistingUserInfo">Failed to save information</string>
+
+   <!-- <string name="baseURI">http://212.22.169.19:8080></string-->
+<!--
+    <string name="baseURI">http://172.104.150.137:8080</string>
+-->
+    <!--<string name"baseURI">http://41.57.106.84:8080</string>-->
+  <!--  <string name="baseURI">http://41.78.25.230:8080</string>-->
+   <!-- <string name="baseURI">http://197.232.250.9:8080</string> -->
+    <string name="baseURI">http://212.22.169.19:8080</string>
+    <string name="baseUsername">brisk.afa.mobile@gmail.com</string>
+    <string name="basePassword">abc123</string>
+
+    <!-- Strings related to login -->
+    <string name="auth">users/auth</string>
+    <string name="prompt_username">Field Username</string>
+    <string name="prompt_password">Field Password</string>
+    <string name="action_sign_in">register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+    <string name="username_hint">Field email&#8230;</string>
+    <string name="password_hint">Field password&#8230;</string>
+    <string name="password_your_hint">Your password&#8230;</string>
+    <string name="change_password_repeat_hint">Repeat New password&#8230;</string>
+    <string name="change_password_hint">New password&#8230;</string>
+    <string name="login_label">Login</string>
+    <string name="login_screen_label">AFA FIELD MOBILE APP</string>
+
+    <string name="change_password_label">Change Your Password</string>
+
+    <string name="cancel_label">Clear</string>
+    <string name="skip">Skip To Next</string>
+
+    <!-- Strings related to login -->
+    <string name="title_activity_register">RegisterActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="title_activity_transactions">TransactionsActivity</string>
+    <string name="title_activity_available">AvailableActivity</string>
+    <string name="title_activity_payments">PaymentsActivity</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+
+    <!-- Nav Drawer Menu Items -->
+    <string name="drawer_close">Slider Menu Closed</string>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <!--     <array name="nav_drawer_icons">
+             <item>@drawable/ic_account</item>
+             <item>@drawable/ic_groups</item>
+             <item>@drawable/ic_transactions</item>
+             <item>@drawable/ic_registration</item>
+             <item>@drawable/ic_exit</item>
+         </array>-->
+
+    <string name="desc_list_item_icon">Item Icon</string>
+
+    <!-- Content Description -->
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_home_fragment">HomeFragment</string>
+    <string name="title_activity_my_account_fragment">MyAccountFragment</string>
+    <string name="title_activity_groups_fragment">GroupsFragment</string>
+    <string name="title_activity_transactions_fragment">TransactionsFragment</string>
+    <string name="title_activity_registrations_fragment">RegistrationsFragment</string>
+    <string name="title_activity_exit_fragment">ExitFragment</string>
+    <string name="bsl_pref_file">co.ke.bsl.PREF_FILE</string>
+
+    <!-- -URL Connection -->
+    <!-- Shared Pref -->
+    <string name="downloadGroups">DownloadGroups</string>
+
+    <!-- String related to Groups -->
+    <string name="document_no">Document Number </string>
+
+    <!-- Sugar Retail and Wholesale Prices Survey window -->
+    <string name="document_date">Document Date</string>
+    <string name="city">City</string>
+    <string name="type_of_sugar_prices_survey">Type of Sugar Prices Survey</string>
+    <string name="Supermarket_Shop">Supermarket/Shop</string>
+    <string name="Local_branded_sugar_1kg">Local Branded Sugar 1kg</string>
+    <string name="local_branded_sugar_2kg">Local Branded Sugar 2kg</string>
+    <string name="local_sugar_50kg_bag">Local Sugar 50kg Bag</string>
+    <string name="Imported_sugar_50kg_Bag">Imported Sugar 50kg Bag</string>
+    <string name="survey_ending">Survey Ending</string>
+    <string name="save">Submit</string>
+    <string name="next">Next</string>
+    <string name="addmore">Add New</string>
+    <string name="sugar_survey_wholesale">Sugar Prices Survey </string>
+    <string name="sugar_survey_retail">Sugar Retail Prices Survey </string>
+    <string name="sugar_mollases_production_inspection">Sugar and Molasses Production Factory Inspection</string>
+    <string name="sugar_mill_compliance_visit_checklist">Sugar Mill License Compliance Visit Checklist </string>
+    <string name="sugar_miller_license_conformance_assement">Sugar Miller License Conformance Assessment </string>
+    <string name="title_surveySetup">Survey Setup Step 1 Of 5 </string>
+
+    <string name="title_shop">Shop Detail Step 2 Of 5 </string>
+
+    <string name="title_whole_sale_local"> Local Sugar Prices Range Step 3 Of 5</string>
+
+
+    <string name="title_whole_sale_import"> Imported Sugar Prices Range  Step 4 Of 5</string>
+
+    <string name="title_whole_sale_local_stocked"> Local Stocked Sugar  Step 4 Of 5</string>
+
+    <string name="title_whole_sale_import_stocked"> Imported  Stocked Sugar Step 5 Of 5</string>
+
+    <string name="Brand">Sugar Brand</string>
+
+    <string name="whole_sale_shop">Shop name</string>
+
+    <string name="price_of_1kg">Price of 1 KG</string>
+
+    <string name="price_of_2kg">Price of 2 KG</string>
+
+    <string name="county_of_origin">Country of Origin</string>
+
+    <string name="price_of_50kg">Price of 50 KG Bag</string>
+
+    <string name="price_of_24kg">Price of 24KG Bale</string>
+
+    <string name="price_of_20kg">Price of 20KG Bale</string>
+
+    <string name="name_of_the_applicant">Name of Applicant</string>
+
+
+    <!--  Daily Returns Inspection-->
+
+    <string name="sugar_company">Sugar Company</string>
+
+    <string name="date_of_the_inspection">Date of Inspection</string>
+
+    <string name="select_return">Select Return</string>
+
+    <string name="date_of_return">Date of Returns</string>
+
+    <string name="Zone">Zone</string>
+
+    <string name="remaks">Remarks</string>
+
+    <string name="sugar_production_tons">Sugar Production (Tons)</string>
+
+    <string name="sugar_production">Sugar Production</string>
+    <string name="sugar_sales">Sugar Sales (Tons)</string>
+    <string name="closing_stock_tons">Closing Stock (Tons)</string>
+    <string name="fifty_kg_bag">50 KG bag</string>
+    <string name="bag_25kg">25 KG bag</string>
+    <string name="bale_25KG">25 KG bale</string>
+    <string name="bale_24kg">24 KG bale</string>
+    <string name="bale_20kg">20 KG bale</string>
+    <string name="bale_18kg">18 KG bale</string>
+    <string name="bale_15kg">15 KG bale</string>
+    <string name="bale_12kg">12 KG bale</string>
+    <string name="bale_10kg">10 KG bale</string>
+    <string name="county">County</string>
+
+
+    <string name="search">Search/Query Records</string>
+
+
+    <!-- Follow up registration -->
+
+    <string name="title_followMember">Follow Up Registrations</string>
+    <string name="vacancyInfo_slotSave">Updating Password Please wait</string>
+
+    <!-- Change Password -->
+    <string name="password_change_sucess">Password Updated Successfully</string>
+    <string name="password_change_failed">Survey Submission Failed</string>
+    <string name="password_change">Password Change</string>
+    <string name="agent_error_postingOrderFailed">Posting the Field details failed.\n\nError details have been logged.\n\nError Message: \&#34;%1$s\&#34;\n\n</string>
+    <string name="registration_sucess">Survey Details Successfully Submitted</string>
+
+    <!-- Registration Screen -->
+    <string name="registration_failed">Survey Details  Submission Failed</string>
+    <string name="pizzasList_error_downloadingPizzasListFailed">Downloading the membership list failed.\n\nError details have been logged.\n\nError Message: \&#34;%1$s\&#34;</string>
+    <string name="pizzasList_error_postingOrderFailed">Posting the Survey details failed.\n\nError details have been logged.\n\nError Message: \&#34;%1$s\&#34;\n\n</string>
+    <string name="pizzasList_shoppingCart">Survey Details</string>
+    <string name="payment_posting">Payment Posting</string>
+    <string name="pizzasList_orderCheckedOut">Membership Details</string>
+    <string name="membership_administration">Group Payment Administration</string>
+
+    <string name="membership_transaction_administration">Group Transaction Administration</string>
+
+    <string name="group_administration">Group Administration</string>
+
+
+    <string name="membership_grp_members"> Group Members</string>
+
+
+    <string name="group_loan_repayment"> Group Loan Repayment</string>
+    <string name="group_savings_payment"> Group Savings Payment</string>
+
+    <string name="group_loan_saved_successfully">Loans Repayment Posted Successfully</string>
+
+
+    <!-- membership management -->
+
+    <string name="group_loan_failed_successfully">Loans Repayment Posting Failed</string>
+    <string name="group_total_administration">Group Total</string>
+    <string name="group_loan_save">Save Loan</string>
+    <string name="group_loan_cancel">Clear</string>
+    <string name="saving_label">Saving Type</string>
+    <string name="group_savings_saved_successfully">Data  Posted Successfully</string>
+
+    <!-- Group Loan Repayment -->
+    <string name="group_savings_failed_successfully">Posting To the Server Failed</string>
+    <string name="group_savings_save">Submit Savings </string>
+    <string name="group_savings_cancel">Clear</string>
+    <string name="group_loan_transaction"> Group Loan Transactions</string>
+    <string name="group_saving_transaction"> Group Saving Transactions</string>
+
+    <!-- Group Savings Payment -->
+
+    <string name="title_activity_expandable_list">ExpandableListActivity</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="loadingProgressDialog_title"></string>
+    <string name="loadingProgressDialog_text">Loading. Please wait ...</string>
+    <string name="farmer_s_phone_no">Farmer\'s Phone No</string>
+
+    <!-- Group Transactions -->
+    <string name="sub_county">Sub County</string>
+    <string name="expected_tch">Expected TCH</string>
+    <string name="variety">Variety</string>
+    <string name="age_months">AGE (months)</string>
+
+    <string name="hectares">Hectares</string>
+    <string name="crop_vigour">Crop Vigour</string>
+    <string name="crop_colour">Crop Colour</string>
+    <string name="crop_density">Crop Density</string>
+    <string name="pests_disease_and_weeds">Pests, Disease and Weeds</string>
+    <string name="sub_total">Sub Total</string>
+    <string name="total_tons">Total (TONS)</string>
+    <string name="crop_class">Crop Class</string>
+    <string name="submit">Submit</string>
+    <string name="sugar_initial_stock_this_month">Sugar Initial Stock This Month</string>
+    <string name="sugar_initial_stock_year_to_date">Sugar Initial Stock Year to Date</string>
+    <string name="molasses_initial_stock_this_month">Molasses Initial Stock This Month</string>
+    <string name="molasses_initial_stock_year_to_date">Molasses Initial Stock Year to Date</string>
+    <string name="sugar_production_bagged_this_month">Sugar Production Bagged This Month</string>
+    <string name="molasses_production_bagged_year_to_date">Molasses Production Bagged Year to Date</string>
+    <string name="sugar_production_bagged_year_to_date">Sugar Production Bagged Year to Date</string>
+
+    <string name="molasses_production_bagged_this_month">Molasses Production Bagged This Month</string>
+    <string name="sugar_total_supply_this_month">Sugar Total Supply This Month</string>
+    <string name="sugar_total_supply_year_to_date">Sugar Total Supply Year to Date</string>
+    <string name="molasses_total_supply_this_month">Molasses Total Supply This Month</string>
+    <string name="molasses_total_supply_year_to_date">Molasses Total Supply Year to Date</string>
+    <string name="sugar_domestic_sale_this_month">Sugar Domestic Sale This Month</string>
+    <string name="sugar_domestic_sale_year_to_date">Sugar Domestic Sale Year to Date</string>
+    <string name="molasses_domestic_sale_this_month">Molasses Domestic Sale This Month</string>
+    <string name="molasses_domestic_sale_year_to_date">Molasses Domestic Sale Year to Date</string>
+    <string name="sugar_export_sale_this_month">Sugar Export Sale This Month</string>
+    <string name="sugar_export_sale_year_to_date">Sugar Export Sale Year to Date</string>
+    <string name="molasses_export_sale_this_month">Molasses Export Sale This Month</string>
+    <string name="molasses_export_sale_year_to_date">Molasses Export Sale Year to Date</string>
+    <string name="sugar_wastage_this_month">Sugar Wastage This Month</string>
+    <string name="sugar_wastage_year_to_date">Sugar Wastage Year to Date</string>
+    <string name="molasses_wastage_this_month">Molasses Wastage This Month</string>
+    <string name="molasses_wastage_year_to_date">Molasses Wastage Year to Date</string>
+    <string name="sugar_total_distribution_this_month">Sugar Total Distribution This Month</string>
+    <string name="sugar_total_distribution_year_to_date">Sugar Total Distribution Year to Date</string>
+    <string name="molasses_total_distribution_this_month">Molasses Total Distribution This Month</string>
+    <string name="molasses_total_distribution_year_to_date">Molasses Total Distribution Year to Date</string>
+    <string name="nature_causes_of_wastage">Nature/Causes of Wastage</string>
+    <string name="cane_crushed_for_the_month">Cane Crushed for the Month</string>
+    <string name="factory_actual_capacity">Factory Actual Capacity</string>
+    <string name="factory_rated_capacity">Factory Rated Capacity</string>
+    <string name="sugar_made_year_to_date">Sugar Made Year to Date</string>
+    <string name="sugar_made_for_the_month">Sugar Made for the Month</string>
+    <string name="cane_crushed_year_to_date">Cane Crushed Year to Date</string>
+    <string name="miller">Miller</string>
+    <string name="type_of_returns">Type of returns</string>
+    <string name="zone">Zone</string>
+    <string name="sugarcane_variety">Sugarcane variety</string>
+    <string name="calender_year">Calender Year</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="outgrowers_r1">Outgrowers R1</string>
+    <string name="outgrowers_r2">Outgrowers R2*</string>
+    <string name="outgrowers_r3">Outgrowers R3</string>
+    <string name="nucleus_estate_pc">Nucleus Estate PC</string>
+    <string name="nucleus_estate_r1">Nucleus Estate R1</string>
+    <string name="nucleus_estate_r2">Nucleus Estate R2</string>
+    <string name="nucleus_estate_r3">Nucleus Estate R3</string>
+
+    <string name="outgrowers">Outgrowers</string>
+    <string name="total">Total</string>
+    <string name="target">Target</string>
+    <string name="variance">Variance</string>
+    <string name="rainfall_mm">Rainfall (mm)</string>
+    <string name="ltm">LTM</string>
+    <string name="area_under_cane_ha">Area Under cane (Ha)</string>
+
+    <string name="total_no_of_farmers">Total No. of Farmers</string>
+    <string name="average_farm_size_ha">Average Farm Size (Ha)</string>
+    <string name="sector">Sector</string>
+    <string name="pc">PC</string>
+    <string name="r1">R1</string>
+    <string name="r2">R2</string>
+    <string name="r3">R3</string>
+    <string name="surface_ha">Surface (Ha)</string>
+    <string name="tonnes">Tonnes</string>
+    <string name="age_m">Age (M)</string>
+    <string name="tch">TCH</string>
+    <string name="activity">Activity</string>
+    <string name="type">Type</string>
+    <string name="stage">Stage</string>
+    <!--
+    <string name="outgrowers">Outgrowers</string>-->
+    <string name="surface">Surface</string>
+    <string name="category">Category</string>
+    <string name="no_of_units">No. of Units</string>
+    <string name="power_rating_hp">Power Rating (Hp)</string>
+    <string name="machine_type">Machine Type</string>
+    <string name="operation">Operation</string>
+    <string name="nucleus_estate">Nucleus Estate</string>
+    <string name="sugar_cane_varieties">Sugar Cane Varieties</string>
+    <string name="outgrowers_pc">Outgrowers PC</string>
+    <string name="pc_totals">PC Totals</string>
+    <string name="ratoon_1_totals">Ratoon 1 Totals</string>
+    <string name="ratoon_2_totals">Ratoon 2 Totals</string>
+    <string name="ratoon_3_totals">Ratoon 3 Totals</string>
+    <string name="outgrowers_totals">Outgrowers Totals</string>
+    <string name="nucleus_estate_totals">Nucleus Estate Totals</string>
+    <string name="total_sum">Total sum</string>
+
+    <string name="ref_letter_of_comfort">Ref Letter of Comfort</string>
+
+
+    <string name="adherence_to_relevant_statutory_requirement_and_standard">Adherence to relevant statutory requirement and Standard</string>
+    <string name="list_of_contracted_farmers">List of contracted farmers</string>
+
+
+    <string name="summary_showing_number_of_growers">Summary showing number of growers</string>
+    <string name="nema_weights_osha_certificates">Nema, weights, Osha Certificates</string>
+    <string name="sugar_cane_milling_schedule">Sugar cane milling schedule</string>
+    <string name="samples_of_contracts_in_use_by_miller_for_cane_contracts">Samples of contracts in use by miller for cane contracts</string>
+    <string name="cane_production_and_processing_plans">Cane production and processing plans</string>
+    <string name="schedule_of_farmers_and_sdl_arreas_and_the_measures">Schedule of farmers and SDL arreas and the measures</string>
+    <string name="conformance_to_cane_payment_formula">Conformance to Cane payment Formula</string>
+    <string name="license_no">License No</string>
+    <string name="_1_applicant_entity_profile">1. Applicant entity profile</string>
+    <string name="rain_gauge_station_1">Rain gauge station 1</string>
+    <string name="rain_gauge_station_2">Rain gauge station 2</string>
+    <string name="rain_gauge_station_3">Rain gauge station 3</string>
+    <string name="rain_gauge_station_4">Rain gauge station 4</string>
+    <string name="rain_gauge_station_5">Rain gauge station 5</string>
+    <string name="rain_gauge_station_6">Rain gauge station 6</string>
+    <string name="rain_gauge_station_7">Rain gauge station 7</string>
+    <string name="rain_gauge_station_8">Rain gauge station 8</string>
+    <string name="rain_gauge_station_9">Rain gauge station 9</string>
+    <string name="rain_gauge_station_10">Rain gauge station 10</string>
+    <string name="inspected">Inspected</string>
+    <string name="cane_census">Cane Census List</string>
+    <string name="farmer_name">Farmer Name</string>
+    <string name="farmer_id_no">Farmer ID NO</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="nav_home">Home</string>
+    <string name="nav_photos">Photos</string>
+    <string name="nav_movies">Movies</string>
+
+    <string name="nav_notifications">Notifications</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_about_us">About Us</string>
+    <string name="activity_title_about_us">About Us</string>
+
+    app_name    <!-- Navigation Drawer menu labels -->
+    <string name="activity_title_privacy_policy">Privacy Policy</string>
+    <string name="action_clear_all">Clear All</string>
+    <string name="action_logout">Log out</string>
+    <string name="action_mark_all_read">Mark All as Read</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="title_activity_main_menu">MainMenu</string>
+
+    <!-- Toolbar titles when navigation menu item is selected -->
+    <string name="nav_header_title">Android Studio</string>
+
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <!--<string name="about_page_description" translatable="false">AFA Mobile Field Application aids in conducting surveys and field inspections. Its integrated to AFA IMIS.
+              The Authority is the successor of former regulatory institutions in the sector that were merged into Directorates under the Authority, with the commencement of Crops Act, 2013 on 1st August 2014 , including Coffee Board of Kenya, Kenya Sugar Board, Tea Board of Kenya, Coconut Development Authority, Cotton Development Authority,
+                Sisal Board of Kenya, Pyrethrum Board of Kenya, Horticultural Crops Development Authority.</string>-->
+    <string name="about_contact_us">Contact us</string>
+
+    <string name="about_instagram">Follow us on Instagram</string>
+    <string name="about_facebook">Like us on Facebook</string>
+    <string name="about_play_store">Rate us on the Play Store</string>
+    <string name="about_youtube">Watch us on Youtube</string>
+    <string name="about_twitter">Follow us on Twitter</string>
+    <string name="about_github">Fork us on GitHub</string>
+
+
+    <string name="about_website">Visit our website</string>
+
+    <string name="copy_right" translatable="false">Copyrights © %1$d</string>
+    <string name="define_int_android_platlogo" />
+    <string name="org_title">Agriculture and Food Authority</string>
+    <string name="forgot">Forgot Password</string>
+    <string name="register_now">Register Now</string>
+    <string name="text_sign_in_advantages">
+        When signed in:
+        \n\n&#8226; Your user data is available offline.
+        \n\n&#8226; You are able to manage your account.
+    </string>
+    <string name="sign_out">Sign Out</string>
+    <string name="sign_in">Sign In</string>
+
+    <string name="login_phone_number">Enter Username</string>
+
+    <string name="login_pin">Enter Password</string>
+    <string name="home" tools:ignore="ExtraTranslation">Home</string>
+    <string name="myprofile">Profile</string>
+    <string name="myorders">My Orders</string>
+
+    <string name="cart">Cart</string>
+    <string name="logout">Logout</string>
+    <string name="feedback">Feedback</string>
+
+    <string name="aboutapp">About App</string>
+    <string name="rate">Rate Us</string>
+
+
+    <!--Navigation drawer items-->
+    <string name="helpcentre">Help Center</string>
+    <string name="noconnection">Kindly connect to a WIFI network or enable Mobile Data</string>
+    <string name="help">In case of any query feel free to reach us at :
+        Our website :
+        www.bsl.co.ke
+        Location :
+
+        NAIROBI, KENYA
+        Riara Road, Riara Paddocks,\n
+        Block B4.\n
+
+        Phone Number:
+        \n
+        +254786926142
+    </string>
+    <string name="magic_points">Magic Points</string>
+    <string name="orders_placed">Orders Placed</string>
+    <string name="items_incart">Items inCart</string>
+    <string name="my_profile">My Profile</string>
+    <string name="update_details">Update Details</string>
+    <string name="update">Update</string>
+    <string name="send_otp">Send OTP</string>
+    <string name="back">Back</string>
+    <string name="sugar_prices_survey">Sugar Prices Survey</string>
+    <string name="proceed">Proceed</string>
+    <string name="farmer_details">Farmer Details</string>
+    <string name="crop_details">Crop Details</string>
+    <string name="complete_all_fields">Please complete all fields</string>
+    <string name="gender">Gender</string>
+    <string name="create_record">Save</string>
+    <string name="dummyAmount">123456</string>
+    <string name="dummyPhoneNumber">0722000000</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shop_details">Shop Details</string>
+    <string name="sugar_retail_imported">Sugar Survey Imported</string>
+    <string name="sugar_survey_retail_local">Sugar Survey Retail Local</string>
+    <string name="sugar_loose_retail_imported">Sugar loose Retail Imported</string>
+    <string name="sugar_loose_local_brand">Sugar Loose Local Brand</string>
+
+    <string name="sugar_retail_stocked_imported">Retail Stocked Imported</string>
+    <string name="sugar_wholesale_stocked_local">Wholesale Stocked Local</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="sugar_whole_stocked_imported">wholesale imported stocked</string>
+    <string name="sugar_wholesale_stocked_imported">wholesale imported</string>
+    <string name="sugar_wholesale_brand">wholesale brand</string>
+    <string name="sugar_retail_stocked_local">Retail Stocked Local Brand</string>
+    <string name="name">name</string>
+    <string name="checked">checked</string>
+    <string name="supply_details">Retail Stocked Local Brand</string>
+    <string name="step_1">Step 1</string>
+    <string name="step_2">Step 2</string>
+    <string name="step_3">Step 3</string>
+    <string name="step_4">Step 4</string>
+    <string name="step_5">Step 5</string>
+    <string name="step_6">Step 6</string>
+    <string name="daily_returns_insp">Daily Returns Inspection</string>
+    <string name="self_score">Self score</string>
+    <string name="Addresses_Physical">2. Addresses: Physical, Postal, fax, phone, email</string>
+    <string name="step_7">Step 7</string>
+    <string name="step_8">Step 8</string>
+    <string name="step_9">Step 9</string>
+    <string name="step_10">Step 10</string>
+    <string name="step_11">Step 11</string>
+    <string name="step_12">Step 12</string>
+    <string name="step_13">Step 13</string>
+    <string name="step_14">Step 14</string>
+    <string name="step_15">Step 15</string>
+    <string name="step_16">Step 16</string>
+    <string name="step_17">Step 17</string>
+    <string name="step_18">Step 18</string>
+    <string name="disclosure_of_profile">3. Disclosure of the profile of operating entity</string>
+    <string name="_4_land_sources_of_utilities">4. Land, sources of utilities</string>
+    <string name="_5_source_of_sugar_cane">5. Source of sugar cane</string>
+    <string name="_6_sustainability">6. Sustainability</string>
+    <string name="_7_compliance_with_quality_regulations_and_standard">7. Compliance with Quality regulations and standard</string>
+    <string name="_8_compliance_with_other_legal_requirements">8. Compliance with other legal requirements</string>
+    <string name="_9_nature_and_quality_of_products_and_co_products">9. Nature and quality of products and co-products</string>
+    <string name="section_2_questionaire">Section 2: QUESTIONAIRE</string>
+    <string name="each_response_carries_a_weight_of_1">(Each response carries a weight of 1)</string>
+    <string name="project_profile">PROJECT PROFILE</string>
+    <string name="your_self_rating_should_between_the_range_of_0_5">Your self Rating should between the range of 0-5</string>
+    <string name="_1_changes_in_organisation_and_business_profile">1. Changes in organisation and business profile</string>
+    <string name="self_rating">Self Rating</string>
+    <string name="_2_what_are_the_changes_in_boundary_of_your_project">2. What are the changes in boundary of your project</string>
+    <string name="_2_what_are_the_changes_in_boundary_of_your_project_area">2. What are the changes in boundary of your project area?</string>
+    <string name="project_changes">3. Changes in project area affecting cane production</string>
+    <string name="manufacturing_assets_changes">4. Changes in manufucturing asset affecting efficiency</string>
+    <string name="_6_cane_production_and_processing_plans">6. Cane production and processing plans</string>
+    <string name="legal_requirements">LEGAL REQUIREMENTS</string>
+    <string name="have_you_conformed_with">1. Have you conformed with:</string>
+    <string name="_2_environmental_laws_and_regulations">2. Environmental Laws and regulations</string>
+    <string name="_3_current_labour_laws_and_regulations">3. Current labour laws and regulations</string>
+    <string name="current_tax_regulations">4. Current Tax regulations including SDL</string>
+    <string name="_5_public_health_act">5. Public Health Act</string>
+    <string name="food_and_drugs">6. Food and Drugs Act</string>
+    <string name="_7_all_other_relevant_laws">7. All other relevant laws</string>
+    <string name="good_management">GOOD MANAGEMENT PRACTICES</string>
+    <string name="strategic_plan">1. Do you have a strategic plan?</string>
+    <string name="_2_socio_economic_impacts">2. Socio economic and environment impacts of organization</string>
+    <string name="_3_avarage_cost">3. Average cost of production for each product stream</string>
+    <string name="_4_what_is_your_productivity">4. What is your productivity?</string>
+    <string name="starndardization_progress">5. Progress in standardization in your organization</string>
+    <string name="certificate_management">6. Certifiable management systems deployed</string>
+    <string name="corrected_non_conformities">7. Corrected non-conformities in current Miller License?</string>
+    <string name="self_assessment">Self Assessment</string>
+    <string name="Licence_conformance_Assessment">Licence Conformance Assessment</string>
+    <string name="section_1_general_conditions">Section 1: GENERAL CONDITIONS</string>
+    <string name="SugarMolassesProductionFactoryInspection">Sugar Molasses Production Factory Inspection</string>
+    <string name="Sugar_Mollases_Initial_Stock">Sugar Mollases Initial Stock</string>
+    <string name="Sugar_Mollasses_Total_Supply">Sugar Mollasses Total Supply</string>
+    <string name="Sugar_Mollasses_Export_Sale">Sugar Mollasses Export Sale</string>
+    <string name="Sugar_Mollases_Total_Distribution">Sugar Mollases Total Distribution</string>
+    <string name="Sugar_Mollases_Supply_Details">Sugar Mollases Supply Details</string>
+    <string name="Production_Statistics_Data_Collection">Production Statistics Data Collection</string>
+    <string name="Lime_Tonnes">Lime Tonnes</string>
+    <string name="Meteorological_Data_Central_Met_Station">Meteorological Data Central Met Station</string>
+    <string name="Filter_Mud_Tonnes">Filter Mud Tonnes</string>
+    <string name="Cane_By_Counties">Area under Cane By Counties</string>
+    <string name="Under_Cane_By_Crop_Cycle">Area Under Cane By Crop Cycle</string>
+    <string name="Cane_Varieties_Composition_Ha">Cane Varieties Composition Ha</string>
+    <string name="Cane_Age_Analysis">Cane Age Analysis</string>
+    <string name="Harvestable_Cane">Harvestable Cane</string>
+    <string name="Surface_Harvested_And_Cane_Deliveries">Surface Harvested And Cane Deliveries</string>
+    <string name="Projected_Cane_Supply">Projected Cane Supply</string>
+    <string name="Fertilizer_Bags">Fertilizer Bags</string>
+    <string name="Herbicides_Lts_Kg">Herbicides Lts Kg</string>
+    <string name="Land_Preparation">Land Preparation</string>
+    <string name="Cane_Planting">Cane Planting</string>
+    <string name="Varieties_Planted">Varieties Planted</string>
+    <string name="Seed_Rate_Tc_Ha">Seed Rate Tc Ha</string>
+    <string name="Land_Preparation_Mechanization">Land Preparation Mechanization</string>
+    <string name="Cane_Haulage">Cane Haulage</string>
+    <string name="Roads_Machinery">Roads Machinery</string>
+    <string name="Roads_Rehabilitation_And_Maintainance">Roads Rehabilitation And Maintainance</string>
+    <string name="Sugar_Mollasses_production_bagged">Sugar Mollasses Production Bagged</string>
+    <string name="Sugar_Mollasses_Domestic_sale">Sugar Mollasess Domestic Sale</string>
+    <string name="Sugar_Mollasses_wastage">Sugar Mollases Wastage</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="cane_production_outgrowers">Cane Production Deliveries</string>
+    <string name="seed_cane_availabilty">Seed Cane Availability</string>
+    <string name="retail_prices_survey">Retail Survey List</string>
+    <string name="whole_sale_price_survey">Wholesale Survey List</string>
+    <string name="sugar_mill_licence">Sugar Mill Licence List</string>
+    <string name="sugar_Survey_Retail_Loose_Local_Brand">Sugar Survey Retail Loose Local Brand</string>
+    <string name="sugar_Survey_Retail_Loose_Imported">Sugar Survey Retail Loose Imported</string>
+    <string name="sugar_Survey_Retail_Stocked_Imported">Sugar Survey Retail Stocked Imported</string>
+    <string name="sugar_Survey_Retail_Stocked_Local_Brand">Sugar Survey Retail Stocked Local Brand</string>
+    <string name="sugar_Wholesale_Prices_Survey">Sugar Wholesale Prices Survey</string>
+    <string name="sugar_Survey_WholeSale_Brand">Sugar Survey WholeSale Brand</string>
+    <string name="sugar_Survey_WholeSale_Imported">Sugar Survey WholeSale Imported</string>
+    <string name="sugar_Survey_WholeSale_Imported_Stocked">Sugar Survey WholeSale Imported Stocked</string>
+    <string name="sugar_Survey_WholeSale_Stoked_Brand">Sugar Survey WholeSale Stoked Brand</string>
+    <string name="survey_type">Survey Type</string>
+    <string name="shop">Shop Name</string>
+    <string name="postal_address">P.O BOX 13338 - 0200 \nNairobi</string>
+    <string name="phone_number">Phone Number:</string>
+    <string name="sugar_Survey_Retail_Local_Brand">Sugar Survey Retail Local Brand</string>
+    <string name="sugar_survey_type">Type Of Survey</string>
+    <string name="nurseryCertificateNo">Nursery Certificate No</string>
+    <string name="a_title_deed_an_allotment_letter_or_lease_agreement">Is there a title deed, an allotment letter or lease agreement in place</string>
+    <string name="evidence">Evidence</string>
+    <string name="total_acreage_under_pyrethrum">Is the total acreage under pyrethrum</string>
+    <string name="acreage_available_for_expansion">Is there acreage available for expansion</string>
+    <string name="suitability_of_the_land_site_for_establishment_of_a_nursery">Is the land site suitable for establishment of a nursery</string>
+    <string name="a_reliable_supply_of_clean_water_has_water_been_tested">Is there a reliable supply of clean water and has the water been tested?</string>
+    <string name="accessibility_of_nursery_site">Is the nursery site accessible</string>
+    <string name="a_clearance_letter_from_a_supplier_of_planting_materials">Is there a clearance letter from a supplier of planting materials</string>
+    <string name="demonstrate_adequate_knowledge_in_nursery_management">Does the personnel demonstrate adequate knowledge in nursery management</string>
+    <string name="for_an_existing_crop_what_is_the_age_of_the_crop">For an existing crop, what is the age of the crop</string>
+    <string name="source_of_planting_materials_seed_clonal">Is the source of planting materials seed/Clonal</string>
+    <string name="phenotypic_characteristics_distinctiveness_uniformity">Does the crop have phenotypic characteristics – Distinctiveness, Uniformity</string>
+    <string name="disease_incidences_fusarium_wilt_budding_disease">Are there disease incidences of Fusarium Wilt Budding disease</string>
+    <string name="pest_incidences_thrips_red_spider_mites_nematodes_moles">Are there pest incidences of Thrips, red spider mites, nematodes, moles</string>
+    <string name="field_hygiene_conditions">Are field hygiene conditions satisfactory</string>
+    <string name="target_market">Has a target market been identified</string>
+    <string name="inspection_by_kephis_site_inspection_water_test_etc">Has an inspection by Kephis, a site inspection, a water test, etc been carried out</string>
+    <string name="recommendations">Recommendations</string>
+    <string name="certificate_number">Certificate Number</string>
+    <string name="pyrethrum_inspection_checklist">Pyrethrum Inspection Checklist</string>
+    <string name="pyrethrum_inspection_details">Pyrethrum Inspection Details</string>
+    <string name="pyrethrum_inspection_list">Pyrethrum Inspection List</string>
+    <string name="tea_warehouse_inspection">Tea WareHouseMan Inspection</string>
+    <string name="tea_warehouse_inspection_checklist">Tea WarehouseMan Inspection Checklist</string>
+    <string name="mandatory_5_marks">Mandatory(5 marks)</string>
+    <string name="certificate_of_company_registration_incorp">Is there a certificate of company registration/incorporation</string>
+    <string name="valid_insurance_policy">Is there a valid insurance policy in place</string>
+    <string name="documented_hygiene_policy">Is the hygiene policy documented</string>
+    <string name="must_2_marks">Must(2 marks)</string>
+    <string name="evidence_of_implementation">Is there any evidence of implementation of the hygiene policy</string>
+    <string name="food_safety_hazard">Has food safety hazard risk assessment been done</string>
+    <string name="must_3_marks">Must (3 marks)</string>
+    <string name="control_maesures">Are there control measures for potential food safety contaminantsvin place</string>
+    <string name="documented_glass_policy">Are glass policies and glass inspections documented</string>
+    <string name="valid_medical_certificates">Are there valid medical certificates</string>
+    <string name="are_hygiene_trainings_conducted">Are hygiene trainings conducted</string>
+    <string name="adequate_and_clean">Are there adequate and clean personal protective equipment (ppe\'s)</string>
+    <string name="personnel_hygiene_practices">Are personnel hygiene practices followed</string>
+    <string name="changing_rooms_and_toilets">Are changing rooms and toilets adequate and clean</string>
+    <string name="documented_cleaning_programs">Are cleaning programs for plant and equipment documented</string>
+    <string name="recommended_1_mark">Recommended(1 mark)</string>
+    <string name="cleaning_records_kept">Are cleaning records kept</string>
+    <string name="segregation_and_labeling">Are cleaning detergents segregated and labeled</string>
+    <string name="are_all_pests_exterminated">Are all pests exterminated</string>
+    <string name="up_to_date_bait_map">Is the bait map up to date</string>
+    <string name="inspection_at_least_every_3_months">Are inspections done at least every 3 months</string>
+    <string name="precaution_to_prevent">Are there precautions put in place to prevent possible contamination</string>
+    <string name="storage_distribution_and_transportation">Is storage, distribution and transportation carried out without product damage</string>
+    <string name="walls_and_partitions">Do  walls and partitions have at least 0.5m passageway all round</string>
+    <string name="procedure_for_inspection">Is there a procedure for inspection of incoming and outgoing products</string>
+    <string name="proper_segregation_of_materials">Are materials properly segregated</string>
+    <string name="security_access_control">Is there adequate security/ access control to storage and processing areas</string>
+    <string name="sufficient_ventilation">Is there sufficient ventilation (e.g. use of extractor fans)</string>
+    <string name="adequate_services">Are services adequately provided: (water, air, lighting, power, etc)</string>
+    <string name="proper_waste_collection">Is proper collection, storage and disposal of waste carried out</string>
+    <string name="external_site_standards">Does the external site(grounds) meet required standards</string>
+    <string name="must_1_mark">Must (1 mark)</string>
+    <string name="walls">Do the walls meet the required standards</string>
+    <string name="floors">Do the floors meet the required standards</string>
+    <string name="roof_ceiling_and_overhead">Does the roof/ceiling and overhead meet the required standards</string>
+    <string name="windows">Do the windows meet the required standards</string>
+    <string name="doors">Do the doors meet the required standards</string>
+    <string name="protection_of_light_tubes_bulbs">Are light tubes/bulbs protected</string>
+    <string name="maintenance_programs">Are maintenance programs in place</string>
+    <string name="maintenance_records_maintained">Are maintenance records maintained</string>
+    <string name="are_conveyor_belts_protected">Are conveyor belts with unpacked tea protected</string>
+    <string name="product_testing">Is product testing carried out</string>
+    <string name="calibration_of_the_weighing_scale">Are weighing scales correctly calibrated</string>
+    <string name="medical_examination">Medical examination</string>
+    <string name="incoming_product_vehicle_inspection">Are incoming product/vehicle inspections done</string>
+    <string name="hygiene_housekeeping_inspection">Are hygiene/housekeeping inspections done</string>
+    <string name="submission_of_annual_returns">Are annual returns submitted</string>
+    <string name="license_number">License Number</string>
+    <string name="authority_to_erect_number">Authority to Erect Number</string>
+    <string name="coffee_area">Coffee Area</string>
+    <string name="production_record_of_past_3_years">Production Record of Past 3 years (in Kgs)</string>
+    <string name="crop_husbandry_practices_on_the_farm">Crop Husbandry Practices on the Farm</string>
+    <string name="total_land_area">Total Land Area (acres)</string>
+    <string name="total_number_of_trees">Total Number of Trees</string>
+    <string name="area_under_mature_coffee">Area Under Mature Coffee (acres)</string>
+    <string name="production_kg">Production(Kg)</string>
+    <string name="objection_letter_from_its_mother_society">Is there an objection letter from its mother society</string>
+    <string name="environmental_management">Environmental Management</string>
+    <string name="coffee_advisory_officer_recommendations">Coffee Advisory Officer Recommendations</string>
+    <string name="coffee_working_group_recommendations">Coffee Working Group Recommendations</string>
+    <string name="status">Status</string>
+    <string name="remarks">Remarks</string>
+    <string name="waste_disposal">Are proper waste disposal systems in place</string>
+    <string name="pollution_management">Are there pollution management practices in place</string>
+    <string name="water">Is there access to water</string>
+    <string name="nema_certificate">Is there a valid NEMA Certificate</string>
+    <string name="document_status">Document Status</string>
+    <string name="acres">(acres)</string>
+    <string name="tea_Packer_Compliance_Checklist">Tea Packer Compliance Monitoring Checklist</string>
+    <string name="compliance_with_reg">Compliance With Registration and Other Requirements(23mks)</string>
+    <string name="copliance_with_hygiene">Compliance With Hygiene and Food SafetyStandards(77MKS)</string>
+    <string name="product_control">B2. PRODUCT CONTROL (4 mks)</string>
+    <string name="process_control">Process Control (36mks)</string>
+    <string name="teapacker_list">TeaPacker List</string>
+    <string name="teawarehouseman_list">TeaWarehouseMan List</string>
+    <string name="horticulture_nursery_inspection_list">Hortuculture Nursery Inspection List</string>
+    <string name="horticultural_produce_transportation_list">Hortuculture Produce Transportation List</string>
+    <string name="horticultural_packhouse_warehouse_list">Hortucultural Packhouse Warehouse List</string>
+    <string name="horticultural_crops_export_licence_list">Hortucultural Crops Export Licence List</string>
+    <string name="horticultural_flower_consolidators_list">Hortuculture Flower Consolidators List</string>
+    <string name="fruits_and_vegetables_consolidators_list">Fruits and Vegetables Consolidators List</string>
+    <string name="horticultural_flower_exporters_list">Horticultural Flower Exporters List</string>
+    <string name="fruits_and_vegetables_exporters_list">Fruits And Vegetables Exporters List</string>
+    <string name="avocado_quality_inspection_list">Avocado Quality Inspection List</string>
+    <string name="mango_quality_inspection_list">Mango Quality Inspection List</string>
+    <string name="cold_room_temperature_records_list">Cold Room Temperature Records List</string>
+    <string name="personal_hygiene_list">Personal Hygiene List</string>
+    <string name="horticultural_crops_cold_storage_list">Horticultural Crops Cold Storage List</string>
+    <string name="coffee_nursery_certificate_list">Coffee Nursery Certificate List</string>
+    <string name="pulping_station_licence_ate_list">Pulping Station Licence(ATE) List</string>
+    <string name="pulping_station_licence_psl_list">Pulping Station Licence(PSL) List</string>
+    <string name="coffee_miller_licence_list">Coffee Miller Licence List</string>
+    <string name="coffee_management_agent_list">Coffee Management Agent List</string>
+    <string name="coffee_grower_marketing_agent_list">Coffee Grower Marketing Agent List</string>
+    <string name="coffee_commercial_marketing_agent_list">Coffee Commercial Marketing Agent List</string>
+    <string name="coffee_exporter_dealer_inspection_list">Coffee Exporter/Dealer Inspection List</string>
+    <string name="nuts_and_oils_market_survey_list">Nuts And Oils Market Survey List</string>
+    <string name="cotton_buying_store_inspection_list">Cotton Buying Store Inspection List</string>
+    <string name="sisal_factory_inspection_list">Sisal Factory Inspection List</string>
+    <string name="cotton_ginnery_inspection_list">Cotton Ginnery Inspection List</string>
+    <string name="about_us">About Us</string>
+    <string name="teacker_inspection">Tea Packer Inspection Checklist</string>
+    <string name="compliance_with_reg_36mks">Compliance With Registration and Other Requirements</string>
+    <string name="compliance_with_hygiene">Compliance With Hygiene And food Safety 55 Marks</string>
+    <string name="personal_hygiene">Personnel Hygiene (13Marks)</string>
+    <string name="process_control_14mks">Process Control 14 Marks</string>
+    <string name="personnel">Personnel 13Marks</string>
+    <string name="coffee_nursery_inp">Coffee Nursery Certificate Inspection</string>
+    <string name="general">General</string>
+    <string name="statutory_requirements">Statutory Requirements</string>
+    <string name="nema_certification">Is there a valid NEMA certificate</string>
+    <string name="findings">Findings</string>
+    <string name="technical_requirements">Technical Requirements</string>
+    <string name="milling_and_machinery_status">Are the millers and machinery in good condition</string>
+    <string name="waste_teas_disposal">Are tea waste disposal systems in place</string>
+    <string name="liquoring_cupping_facilities">Are there Liquoring/cupping facilities</string>
+    <string name="engagement_of_qualified_liquorer_s">Are the Liquorer(s) engaged qualified</string>
+    <string name="use_of_protective_clothing_gear">Do the personnel use protective clothing gear</string>
+    <string name="valid_insurance_in_place">Is there a valid insurance in place</string>
+    <string name="general_security_arrangements">Are there any general security arrangements</string>
+    <string name="growers_contracted_register_for_milling_agreements">Is a growers contracted register for Milling agreements kept</string>
+    <string name="milling_returns_to_coffee_growers">Are milling returns to coffee growers done</string>
+    <string name="warehousing_facilities">Warehousing Facilities</string>
+    <string name="roof">Do the roofs meet the required standards</string>
+    <string name="ventilation">Is there adequate ventilation</string>
+    <string name="washrooms">Are there adequate and clean washrooms</string>
+    <string name="coffee_packaging_bagging_materials">Are there sufficient coffee packaging/bagging materials</string>
+    <string name="general_hygiene">Is general hygiene satisfactory</string>
+    <string name="firefighting_equipment">Is the fire fighting equipment in place</string>
+    <string name="licence_number">Licence number</string>
+    <string name="coffee_pulping_station_psl">Coffee Pulping Station Licence Application PSL</string>
+    <string name="tea_buyer_iporter_exporter">Tea Buyer Importer Exporter Inspcetion</string>
+    <string name="coffee_management_agent">CoffeeManagementAgentChecklist</string>
+    <string name="coffee_grower_marketing_agent_inspection">Coffee Grower Marketing Agent Inspection Checklist</string>
+    <string name="are_markings_clear">Are markings clear</string>
+    <string name="is_coffee_directorate_licence_valid">Is coffee directorate licence valid</string>
+    <string name="has_single_business_permit_by_county_issued">Has a single business permit by the county been issued</string>
+    <string name="aspects_tick_for_yes">ASPECTS - Tick for(Yes)</string>
+    <string name="are_waste_disposal_systems_in_place">Are waste disposal systems in place</string>
+    <string name="has_fire_fighting_equipment_serviced">Has the fire fighting equipment been serviced</string>
+    <string name="is_general_hygiene_satisfactory">Is general hygiene satisfactory</string>
+    <string name="are_washing_rooms_clean">Are washing rooms clean</string>
+    <string name="is_clean_water_supplied">Is clean water supplied</string>
+    <string name="is_electricity_supplied">Is electricity supplied</string>
+    <string name="are_returns_to_coffee_directorate_remitted">Are returns to coffee directorate remitted</string>
+    <string name="is_traceability_system_in_place">Are traceability systems in place</string>
+    <string name="are_cupping_facilities_for_coffee_quality_analysis_in_place">Are cupping facilities for coffee quality analysis in place</string>
+    <string name="is_occupational_and_health_act_certification_valid">Is the Occupational and Health Act certification valid</string>
+    <string name="is_payment_to_growers_within_max_of_14_days_after_an_auction">Is payment to growers within max of 14 days after an auction done</string>
+    <string name="are_standard_out_turn_sales_statements_in_place">Are Standard out turn sales statements in place</string>
+    <string name="are_standard_direct_sales_contracts_in_place">Are Standard Direct sales Contracts in place</string>
+    <string name="quality_analysis_facility">Quality Analysis Facility</string>
+    <string name="are_offices_premises_ideal">Are offices/premises ideal</string>
+    <string name="are_fire_fighting_equipments_in_place">Are fire fighting equipment in place</string>
+    <string name="is_clean_water_available">Is clean water available</string>
+    <string name="is_sample_roaster_in_place">Is sample roaster in place</string>
+    <string name="is_sample_grinder_in_place">Is sample grinder in place</string>
+    <string name="are_spitting_drums_in_place">Are spitting drums in place</string>
+    <string name="are_testing_cups_in_place">Are testing cups in place</string>
+    <string name="is_sample_trays_in_place">Are sample trays in place</string>
+    <string name="are_spoons_in_place">Are spoons in place</string>
+    <string name="is_water_heating_system_in_place">Is there a water heating system in place</string>
+    <string name="is_moisture_meter_in_place">Is there a moisture meter in place</string>
+    <string name="are_washing_rooms_satisfactory">Are washing rooms satisfactory</string>
+    <string name="is_licensed_liquorer_hired">Is the licensed liquorer hired</string>
+    <string name="are_environmental_sustainability_efforts_in_place">Are environmental sustainability efforts in place</string>
+    <string name="is_value_addition_roasting_undertaken">Is value addition (roasting) undertaken</string>
+    <string name="is_packaging_quality_standard">Does the packaging quality meet the required standards</string>
+    <string name="physical_facilities">Physical Facilities</string>
+    <string name="transporting_firm_company">Transporting Firm/Company</string>
+    <string name="Name">Name</string>
+    <string name="own_farm">Own Farm</string>
+    <string name="contracted_sources">Contracted Sources</string>
+    <string name="is_produce_transportation_done_to_avoid_mechanical_damage">Is transportation of produce done in a manner that avoids mechanical damage to the transport vessel</string>
+    <string name="is_transport_vessel_cleaned_disinfected_regulary">Are the transport vessels cleaned and disinfected regulary</string>
+    <string name="is_cleared_documentaion_temp_control_systems">Are documentations cleared or are there temporary control systems</string>
+    <string name="is_intergrity_of_product_consignment_ensured_by_operators">Is the intergrity of product consignment ensured by the operators</string>
+    <string name="produce_handling_facility_approved_by_hcd_regional_offices">Is the produce handling facility approved by HCD regional offices</string>
+    <string name="any_other_comments">Any Other Comments</string>
+    <string name="dealer_category">Dealer Category</string>
+    <string name="certification_to_ks1758">Is there a certification to KS1758</string>
+    <string name="award">Award*</string>
+    <string name="corrective_measures_timeline">Corrective measures timeline*</string>
+    <string name="remarks_must">Remarks*</string>
+    <string name="other_recognized_standards">Are there other recognized standards</string>
+    <string name="evidence_of_registration_on_the_national_traceability_system">Is there evidence of registration on the national traceability system</string>
+    <string name="evidence_of_registration_on_the_single_window_system">Is there evidence of registration on the Single Window System</string>
+    <string name="evidence_of_safe_disposal_of_farm_waste_pollution_control">Is there evidence of safe disposal of farm waste and pollution control</string>
+    <string name="evidence_of_protection_of_worker_s_welfare">Is there evidence of protection of worker’s welfare</string>
+    <string name="copy_of_hcd_export_license_validity_renewals">Is there a copy of HCD Export License (validity renewals)</string>
+    <string name="traceability_list_of_the_company_s_contracted_farmers_scheme">Is there a traceability list of the company’s contracted farmers/scheme</string>
+    <string name="declare_marketing_agents_suppliers_and_furnish_certificate">Are Marketing Agents (Suppliers) declared with furnished certificates</string>
+    <string name="evidence_of_a_traceability_system_policy_and_procedure_qms">Is there evidence of a traceability system policy and procedure (QMS)</string>
+    <string name="evidence_of_attendance_of_annual_training_on_ks1758_part_2_b">Is there any evidence of attendance of annual training on KS1758 part 2 b</string>
+    <string name="annual_training_matrix_schedule_for_staff_suppliers">Is there an annual training matrix/schedule for staff, suppliers</string>
+    <string name="evidence_of_pest_and_disease_control_procedures">Is there any evidence of pest and disease control procedures</string>
+    <string name="claim_against_non_payment_by_contracted_farmers">Are there claims against non payment by contracted farmers</string>
+    <string name="utilization_of_hcd_registered_the_clearing_agents">Are HCD registered clearing Agents utilized</string>
+    <string name="approval_stage">Approval Stage</string>
+    <string name="area_under_coffee_acres">Area Under Coffee (acres)</string>
+    <string name="pulping_machine_type">Pulping Machine Type</string>
+    <string name="market_prices">Market Prices</string>
+    <string name="location">Location</string>
+    <string name="sub_location">Sub Location</string>
+    <string name="product">Product</string>
+    <string name="brand_name">Brand Name</string>
+    <string name="quantity_mt">Quantity (MT)</string>
+    <string name="price">Price</string>
+    <string name="market_outlet">Market Outlet</string>
+    <string name="is_adhoc_inspection">Is Adhoc Inspection</string>
+    <string name="produce_source_tick_appropriately">Produce Source(tick appropriately)</string>
+    <string name="exporter_own_farm">Exporter own farm</string>
+    <string name="id_no">ID No</string>
+    <string name="certification_to_gap">Is there a valid certification to GAP</string>
+    <string name="duly_signed_and_witnessed_contracts">Are contracts duly signed and witnessed</string>
+    <string name="production_plan_per_crop_per_month_for_3months">Is there a production plan per crop per month(for 3months)</string>
+    <string name="is_the_exporter_aware_of_the_market_requirements">Is the exporter aware of the market requirements</string>
+    <string name="does_the_exporter_have_trained_personnel">Does the exporter have trained personnel</string>
+    <string name="controlled_and_approved_traceability_procedures_in_place">Are there controlled and approved traceability procedures in place</string>
+    <string name="does_the_expoter_have_petcide_mrl_for_the_intended_product">Does the expoter have petcide MRL for the intended product</string>
+    <string name="field_codes_blocks_lebels_in_place">Are field codes/blocks/labels in place</string>
+    <string name="is_planting_date_crop_planted_and_are_recorded">Is planting date and crop planted recorded</string>
+    <string name="certification_to_gap_valid_certificate">Certification to GAP (Valid certificate)</string>
+    <string name="contract_with_exporter">Contract With Exporter</string>
+    <string name="knowledge_of_market_requirements">Knowledge of Market Requirements</string>
+    <string name="farm_farmer_reference_codes">Farm/Farmer Reference Codes</string>
+    <string name="records">Records</string>
+    <string name="approved_chemical_list">Approved Chemical List</string>
+    <string name="pesticide_spray_record">Pesticide Spray Record</string>
+    <string name="is_the_chemical_list_approved_and_valid">Is the chemical list approved and valid</string>
+    <string name="presence_of_approved_spray_program_for_the_exporter">Does the exporter have an approved spray program</string>
+    <string name="product_invoices_and_receipts_agaisnt_spray_program">Are there product invoices and receipts against spray program</string>
+    <string name="is_there_spray_records_pesticide_records">Are there spray records/pesticide records</string>
+    <string name="is_the_tradename_of_the_product_recorded">Is the tradename of the product recorded</string>
+    <string name="is_the_phi_recorded">Is the PHI recorded</string>
+    <string name="are_all_spraying_dates_indicated">Are all spraying dates indicated</string>
+    <string name="amount_of_pestcide_applied_recorded">Is the amount of pesticide applied recorded</string>
+    <string name="is_the_phi_observed">Is the PHI observed</string>
+    <string name="field_produce_handling_facility">Field Produce Handling Facility</string>
+    <string name="pesticide_application_personnel">Pesticide Application Personnel</string>
+    <string name="training_schedules_and_certificates">Are there training schedules and certificates</string>
+    <string name="is_there_pest_management_protocol_for_this_pests">Is there pest management protocol for pests</string>
+    <string name="is_there_evidence_on_scounting_of_these_pests">Is there any evidence on scounting of pests</string>
+    <string name="evidence_in_control_of_pests">Is there any evidence of control of pests</string>
+    <string name="is_there_a_collection_shed_for_the_farmers">Is there a collection shed for the farmers</string>
+    <string name="is_the_collection_and_sorting_shed_secured">Is the collection and sorting shed secured</string>
+    <string name="appropriate_hygiene_instructions_collection_sorting_facility">Is there an appropriate hygiene instructions collection/sorting facility</string>
+    <string name="grading_tables_made_of_food_grade_materials">Are grading tables made of food grade materials</string>
+    <string name="does_the_shed_have_running_water_for_handwashing">Does the shed have running water for washing hands</string>
+    <string name="is_the_a_toilet_at_the_facility">Is there a toilet at the facility</string>
+    <string name="is_there_ppe_for_graders_at_the_shed">Is there a PPE for graders at the shed</string>
+    <string name="is_ther_storage_area_for_the_graded_products">Is there a storage area for the graded products</string>
+    <string name="structure_of_collection_shed">Structure Of Collection Shed</string>
+    <string name="management_of_produce_collection">Management Of Produce Collection</string>
+    <string name="product_identification_records">Product Identification Records</string>
+    <string name="farmer_training_on_gap">Farmer Training On GAP</string>
+    <string name="technical_support">Technical Support</string>
+    <string name="comments">Comments</string>
+    <string name="is_the_collection_shed_accessible_to_all_buyers_and_farmers">Is the collection shed accessible to all buyers and farmers</string>
+    <string name="does_the_collection_area_have_an_office">Does the collection area have an office</string>
+    <string name="collection_shed_made_of_easy_to_clean_and_disinfect_material">Is the collection shed made of easy to clean and disinfect material</string>
+    <string name="adequate_lighting_ventilation">Is there adequate lighting/ventilation</string>
+    <string name="is_there_a_waste_disposal_facility">Is there a waste disposal facility</string>
+    <string name="is_there_a_register_of_all_incoming_produce_at_the_shed">Is there a register of all incoming produce at the shed</string>
+    <string name="are_there_procedures_for_product_handling">Are there procedures for product handling</string>
+    <string name="personnel_handling_produce_trained_on_food_security">Are the personnel handling the produce trained on food security</string>
+    <string name="are_all_farmers_registered_at_the_produce_collection_centres">Are all farmers registered at the produce collection centres</string>
+    <string name="presence_of_traceability_codes_accompanying_produce">Are there traceability codes accompanying the produce</string>
+    <string name="availabilty_of_registered_for_all_produce_leaving_the_farm">Is there a of register for all produce leaving the farm</string>
+    <string name="training_certificates">Does the farmer have training certificates</string>
+    <string name="evidence_of_technical_support_to_farmers_by_the_exporter">Is there any evidence of technical support to farmers by the exporter</string>
+    <string name="any_other_comment">Any Other Comment</string>
+    <string name="latex_stains">Latex Stains</string>
+    <string name="skin_color">Skin Color</string>
+    <string name="flesh_color">Flesh Color</string>
+    <string name="skin_defects">Skin Defects</string>
+    <string name="stalk_presence">Stalk Presence</string>
+    <string name="fruit_sizing_no_per_carton">Fruit Sizing(No. Per Carton)</string>
+    <string name="flower_consolidatos">HCD Flowers Consolidators Checklistst</string>
+    <string name="nursery_inpection">Horticulture Nursery Inspection Checklist</string>
+    <string name="parkhouse_warehoure_inspection">Parkhouse WareHouse Inspections</string>
+    <string name="coffee_commercial_mktng_agent">Coffee Commercial Marketing Agent Inspection Checklist</string>
+    <string name="fruits_vegetatbles_consolidators">Fruit vegetable consolidators Desk-vetting checklist</string>
+    <string name="fruits_Vegetables_Exporters_Desk_Vetting_Checklist">Fruits Vegetables Exporters Desk Vetting Checklist</string>
+    <string name="avacado_quality_inspection">Avocado Quality Inspection Checklist</string>
+    <string name="horticultural_Crops_Cold_Storage_Register">Horticultural Crops Cold Storage Register</string>
+    <string name="mango_inspection">Mango Quality Inspection Checklist</string>
+    <string name="personal_inspection">Personal Hygene Checklist</string>
+    <string name="horticultural_Crops_Cold_Storage">Horticultural Crops Cold Storage</string>
+    <string name="ColdRoomTemperaturesRecords">Cold Room Temperatures Records</string>
+    <string name="horticultural_Crops_Cold_Storage_in">Horticultural Crops Cold Storage In</string>
+    <string name="horticultural_Crops_Cold_Storage_out">Horticultural Crops Cold Storage Out</string>
+    <string name="horticultural_Crops_Cold_Storage_charges">Horticultural Crops Cold Storage Charges</string>
+    <string name="cotton_buying_store">Cotton Buying Store Inspection Conformity Assessment</string>
+    <string name="sisal_factory_inspection">Sisal Factory Inspection Conformity Assessment</string>
+    <string name="sisal_spining_factory">Sisal Spinning Factory Inspection Conformity Assessment</string>
+    <string name="cotton_ginnery_inspection">Cotton Ginnery Inspection Conformity Assessmen</string>
+    <string name="certificate_no">Certificate No</string>
+    <string name="commercial_nursery_operator_farm_inspection">Commercial Nursery Operator Farm Inspection</string>
+    <string name="cotton_buying_store_inspection_conformity_assessment">Cotton Buying Store Inspection Conformity Assessment</string>
+    <string name="sisal_factory_inspection_conformity_assessment">Sisal Factory Inspection Conformity Assessment</string>
+    <string name="sisal_spinning_factory_inspection_conformity_assessment">Sisal Spinning Factory Inspection Conformity Assessment</string>
+    <string name="cotton_ginnery_inspection_conformity_assessment">Cotton Ginnery Inspection Conformity Assessment</string>
+    <string name="pay_category">Pay Category</string>
+    <string name="login_enter_email">Enter Email</string>
+    <string name="login_enter_password">Enter Password</string>
+    <string name="trace_code">Trace Code</string>
+    <string name="cotton_lint_classing_report">Cotton Lint Classing Report</string>
+    <string name="cotton_lint_classing_report_list">Cotton Lint Classing Report List</string>
+    <string name="channel_name">AFA Notification</string>
+    <string name="channel_description">Creating a notification channel for AFA Mobile app</string>
+    <string name="service_name">DataSetupService</string>
+    <string name="Sisal_Spinning_Inspection_List">Sisal Spinning Inspection List</string>
+    <string name="lease_agreement">Lease Agreement</string>
+    <string name="err">Error</string>
+    <string-array name="nav_drawer_items">
+        <item>My Account</item>
+        <item>Groups</item>
+        <item>Transactions/Logs</item>
+        <item>Registrations</item>
+        <item>Exit</item>
+    </string-array>
+    <string-array name="planets_array">
+        <item>Select Survey type</item>
+        <item>Retail</item>
+        <item>Whole Sale</item>
+    </string-array>
+    <string-array name="gender_array">
+        <item>Select Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="type_of_survey">
+        <item></item>
+        <item>Retail</item>
+        <item>Wholesale</item>
+    </string-array>
+    <string-array name="afa_cane_Crop_Class">
+        <item>Select Cane Class</item>
+        <item>Plant Crop (PC)</item>
+        <item>Ratoon 1 (R1)</item>
+        <item>Ratoon 2 (R2)</item>
+        <item>Ratoon 3 (R3)</item>
+
+    </string-array>
+    <string-array name="afa_sugarcompanies">
+        <item>Select Sugar Company</item>
+        <item>Muhoroni</item>
+        <item>Butali</item>
+        <item>Chemelil</item>
+        <item>Kibos</item>
+        <item>Kwale</item>
+        <item>Muhoroni</item>
+        <item>Mumias</item>
+        <item>Nzoia</item>
+        <item>Olepito</item>
+        <item>South Nyanza</item>
+        <item>Sukari</item>
+        <item>Transmara</item>
+        <item>West Kenya</item>
+    </string-array>
+    <string-array name="afa_cane_Crop_marks">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <!--   <item>Muhoroni</item>
+           <item>Mumias</item>
+           <item>Nzoia</item>
+           <item>Olepito</item>
+           <item>South Nyanza</item>
+           <item>Sukari</item>
+           <item>Transmara</item>
+           <item>West Kenya</item>-->
+    </string-array>
+    <string-array name="nav_item_activity_titles">
+        <item>Home</item>
+        <item>Sugar Price Survey</item>
+        <item>Cane Census</item>
+        <item>Notifications</item>
+        <item>Settings</item>
+    </string-array>
+
+</resources>

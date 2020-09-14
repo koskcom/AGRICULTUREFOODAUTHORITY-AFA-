@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1" >
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/groupsList_quantity"
+            android:layout_width="20sp"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:paddingLeft="5sp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/groupsList_name"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5sp"
+            android:text="group name"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="25sp"
+            android:paddingRight="5sp" >
+            
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow>
+
+        <TextView
+            android:id="@+id/groupsList_ingredients"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_span="4"
+            android:paddingLeft="30sp"
+            android:text="ingredients"
+            android:textStyle="italic" />
+    </TableRow>
+
+</TableLayout>

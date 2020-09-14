@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="100dp"
+        android:text="@string/header"
+        android:textColor="#262bbb"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:text="Logs And Transactions"
+        android:textColor="#262bbb"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/fistname_et_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="fname"
+            android:layout_weight="0.11"/>
+
+        <EditText
+            android:id="@+id/lastname_et_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="lname"
+            android:layout_weight="0.12"/>
+        <EditText
+            android:id="@+id/amount_et_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="amount"
+            android:layout_weight="0.06"/>
+        <EditText
+            android:id="@+id/phone_et_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="phone"
+            android:layout_weight="0.18"/>
+        <EditText
+        android:id="@+id/date_et_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="date"
+        android:layout_weight="0.45"/>
+
+
+        <Button
+            android:id="@+id/addmem_btn_id"
+            android:layout_width="53dp"
+            android:layout_height="wrap_content"
+            android:text="Add" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:shrinkColumns="*"
+            android:stretchColumns="*" >
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

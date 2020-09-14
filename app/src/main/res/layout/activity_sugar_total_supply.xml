@@ -1,0 +1,137 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.ke.bsl.sisdo.activity.MollassesDailyReturnStep6Activity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background1"
+        android:orientation="vertical" >
+        <include layout="@layout/title_bar" />
+
+
+          <TextView
+            android:id="@+id/sugar_total_supply_this_month"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/sugar_total_supply_this_month" />
+
+        <EditText
+            android:id="@+id/sugar_total_supply_this_month_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/sugar_total_supply_this_month"
+            android:inputType="text" />
+
+        <CheckBox
+            android:id="@+id/sugar_total_supply_this_month_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+           />
+
+
+        <TextView
+            android:id="@+id/sugar_total_supply_this_month_remarks"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/sugar_total_supply_this_month_remarks_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+
+
+
+
+        <TextView
+            android:id="@+id/sugar_total_supply_this_month_date"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/sugar_total_supply_year_to_date" />
+
+        <EditText
+            android:id="@+id/sugar_total_supply_year_to_date_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/sugar_total_supply_year_to_date"
+            android:inputType="text" />
+
+
+        <CheckBox
+            android:id="@+id/sugar_total_supply_year_to_date_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+
+        <TextView
+            android:id="@+id/remarks_sugar_total_supply_year_to_date"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/sugar_total_supply_year_to_date_remarks"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/save"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:onClick="buttonClickListener"
+            android:text="@string/next" />
+
+        <Button
+            android:id="@+id/next"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="buttonClickListener"
+            android:text="@string/cancel_label" />
+    </LinearLayout>
+
+</ScrollView>

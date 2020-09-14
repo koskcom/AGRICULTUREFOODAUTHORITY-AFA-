@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "544283940539",
+    "firebase_url": "https://afa-navigationdrawer.firebaseio.com",
+    "project_id": "afa-navigationdrawer",
+    "storage_bucket": "afa-navigationdrawer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:544283940539:android:39482c1cdfc08a0164fb9e",
+        "android_client_info": {
+          "package_name": "co.ke.bsl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "544283940539-12c2nt7dsbr5rcs2ummdq8tibvcvt6td.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "co.ke.bsl",
+            "certificate_hash": "c9084141467020a0ceea3d98fcd87915eae7a532"
+          }
+        },
+        {
+          "client_id": "544283940539-i4htle7mn5p6u0pittulo04in9u8vvf0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAy3POySPCfyNzVEnx_IPap8aoKgVlPq6E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "544283940539-i4htle7mn5p6u0pittulo04in9u8vvf0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

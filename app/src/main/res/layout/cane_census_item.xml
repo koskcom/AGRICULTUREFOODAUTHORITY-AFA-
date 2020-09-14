@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:resauto="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/icon_height"
+    resauto:cardCornerRadius="4dp"
+    resauto:cardElevation="2dp"
+    resauto:cardMaxElevation="4dp"
+    resauto:cardPreventCornerOverlap="true"
+    resauto:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/ImageLayout"
+            android:layout_width="@dimen/icon_height"
+            android:layout_height="@dimen/icon_height"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/ui_padding">
+
+            <TextView
+                android:id="@+id/txtImageText"
+                android:layout_width="@dimen/profile_pic_size"
+                android:layout_height="@dimen/profile_pic_size"
+                android:layout_marginTop="@dimen/drawer_icon_size"
+                android:background="@drawable/circularview"
+                android:gravity="center"
+                android:text="P"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/large_text"></TextView>
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/farm_description"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/icon_width"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/drawer_icon_size"
+            android:layout_toRightOf="@+id/ImageLayout"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/farmer_description"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/icon_width"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/layout_height"
+            android:layout_toRightOf="@+id/ImageLayout"
+            android:textSize="@dimen/medium_text" />
+
+        <TextView
+            android:id="@+id/farmer_address"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/icon_width"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/profile_pic_size"
+            android:layout_toRightOf="@+id/ImageLayout"
+            android:textSize="@dimen/medium_text" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

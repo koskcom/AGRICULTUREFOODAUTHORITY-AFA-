@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_200"
+    android:padding="@dimen/margin_normal"
+    android:id="@+id/coffeeInspection2ScrollView"
+    tools:context="co.ke.bsl.ui.views.activities.components.SugarSurveyPricesActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textColor="@color/green"
+            android:text="Farm Location"
+            android:textStyle="normal" />
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/county"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etcountycounty"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:enabled="false"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/isCountyCorrect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="is county correct" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="County Remark*"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etcountyremarks"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="@string/sub_county"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etsubcounty"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:enabled="false"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/issubCountycorrect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="is sub county correct" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Sub County Remark*"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etsubcountyremarks"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Location"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etLocation"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:enabled="false"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/islocationcorrect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="is Location correct" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Location Remark*"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etlocationremarks"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Sub location"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etSubLocation"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:enabled="false"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/isSubLocationcorrect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="is Sub Location correct" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Sub Location Remark*"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etsubLocationremarks"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Village"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etVillage"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:enabled="false"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_weight=".5"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <CheckBox
+                        android:id="@+id/isVillagecorrect"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="is Village correct" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            style="@style/loginScreenHints"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Village Remark*"
+            android:textStyle="normal" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/bg_edit_text_gray"
+            android:orientation="horizontal">
+
+            <co.ke.bsl.util.CustomEditText
+                android:id="@+id/etVillageremarks"
+                style="@style/editTextViewAll"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/edit_box_height"
+                android:layout_weight="5.5"
+                android:background="@android:color/transparent"
+                android:inputType="textCapWords"
+                app:font_name="regular" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

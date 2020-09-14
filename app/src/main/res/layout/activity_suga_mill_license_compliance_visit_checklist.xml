@@ -1,0 +1,487 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.ke.bsl.activity.DailyReturnsInspectionActivity" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background1"
+        android:orientation="vertical" >
+<!--
+        <include layout="@layout/title_bar" />
+-->
+
+
+        <!-- <include layout="@layout/title_bar" /> -->
+
+        <TextView
+            android:id="@+id/document_no"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/document_no" />
+
+        <EditText
+            android:id="@+id/document_no_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Document No"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/document_date"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/document_date" />
+
+        <EditText
+            android:id="@+id/document_date_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Document Date"
+            android:inputType="date" />
+
+
+
+        <TextView
+            android:id="@+id/ref_letter_of_comfort"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/ref_letter_of_comfort"/>
+
+        <EditText
+            android:id="@+id/ref_letter_of_comfort_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/ref_letter_of_comfort"
+            android:inputType="text" />
+
+
+
+        <TextView
+            android:id="@+id/applicant"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/name_of_the_applicant"/>
+
+        <EditText
+            android:id="@+id/applicant_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/name_of_the_applicant"
+            android:inputType="text" />
+
+
+
+
+
+
+        <EditText
+            android:id="@+id/shopLongitude_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Longitude"
+            android:inputType="number"
+            android:visibility="invisible"
+            tools:visibility="gone" />
+
+
+        <EditText
+            android:id="@+id/shopLatitude_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="latitude"
+            android:inputType="number"
+            android:visibility="invisible"
+            tools:visibility="gone" />
+
+        <TextView
+            android:id="@+id/list_of_contracted_farmers"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/list_of_contracted_farmers"/>
+
+
+        <CheckBox
+            android:id="@+id/list_of_contracted_farmers_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+        <TextView
+            android:id="@+id/list_of_contracted_farmers_remarks"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/list_of_contracted_farmers_remarks_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/summary_showing_number_of_growers"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/summary_showing_number_of_growers"/>
+
+        <CheckBox
+            android:id="@+id/summary_showing_number_of_growers_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+        <TextView
+            android:id="@+id/summary_showing_number_of_growers_remarks"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/summary_showing_number_of_growers_remarks_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/nema_weights_osha_certificates"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/nema_weights_osha_certificates"/>
+
+        <CheckBox
+            android:id="@+id/nema_weights_osha_certificates_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+        <TextView
+            android:id="@+id/nema_weights_osha_certificates_remarks"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/nema_weights_osha_certificates_remarks_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+
+        <TextView
+            android:id="@+id/sugar_cane_milling_schedule"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/sugar_cane_milling_schedule"/>
+        <CheckBox
+            android:id="@+id/sugar_cane_milling_schedule_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+        <TextView
+            android:id="@+id/sugar_cane_milling_schedule__remarks"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/sugar_cane_milling_schedule__remarks_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+
+        <TextView
+            android:id="@+id/samples_of_contracts_in_use_by_miller_for_cane_contracts"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/samples_of_contracts_in_use_by_miller_for_cane_contracts"/>
+        <CheckBox
+            android:id="@+id/samples_of_contracts_in_use_by_miller_for_cane_contracts_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+        <TextView
+            android:id="@+id/samples_of_contracts_in_use_by_miller_for_cane_contracts_remarks"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/samples_of_contracts_in_use_by_miller_for_cane_contracts_remarks_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/cane_production_and_processing_plans"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/cane_production_and_processing_plans"/>
+
+        <CheckBox
+            android:id="@+id/cane_production_and_processing_plans_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+        <TextView
+            android:id="@+id/cane_production_and_processing_plans_remarks"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/cane_production_and_processing_plans_remarks_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/schedule_of_farmers_and_sdl_arreas_and_the_measures"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/schedule_of_farmers_and_sdl_arreas_and_the_measures"/>
+        <CheckBox
+            android:id="@+id/schedule_of_farmers_and_sdl_arreas_and_the_measures_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+        <TextView
+            android:id="@+id/schedule_of_farmers_and_sdl_arreas_and_the_measures_remarks"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/schedule_of_farmers_and_sdl_arreas_and_the_measures_remarks_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/conformance_to_cane_payment_formula"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/conformance_to_cane_payment_formula"/>
+
+
+        <CheckBox
+            android:id="@+id/conformance_to_cane_payment_formula_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Checked"
+            />
+
+
+        <TextView
+            android:id="@+id/conformance_to_cane_payment_formula_remarks"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/conformance_to_cane_payment_formula_remarks_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/adherence_to_relevant_statutory_requirement_and_standard"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/adherence_to_relevant_statutory_requirement_and_standard"/>
+
+
+        <CheckBox
+            android:id="@+id/adherence_to_relevant_statutory_requirement_and_standard_checkbox"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/adherence_to_relevant_statutory_requirement_and_standard"
+            />
+
+
+        <TextView
+            android:id="@+id/adherence_to_relevant_statutory_requirement_and_standard_remarks"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/remaks"/>
+
+        <EditText
+            android:id="@+id/adherence_to_relevant_statutory_requirement_and_standard_remarks_text"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="@string/remaks"
+            android:inputType="text" />
+
+
+
+
+
+
+        <Button
+            android:id="@+id/save"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:onClick="buttonClickListener"
+            android:text="@string/submit" />
+
+        <Button
+            android:id="@+id/clear"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:onClick="buttonClickListener"
+            android:text="@string/cancel_label" />
+    </LinearLayout>
+
+</ScrollView>

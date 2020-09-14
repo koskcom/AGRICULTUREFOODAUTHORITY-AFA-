@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/md_green_A700"
+    android:orientation="vertical"
+    tools:context=".ui.activities.FeedbackActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            <TextView
+                android:id="@+id/toolbarTitle"
+                style="@style/actionBarTitle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="70dp"
+                android:text="@string/feedback"
+                android:textAlignment="center" />
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="40dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/loginScreenHints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Give Us Your Feedback"
+                    android:textStyle="normal" />
+
+                <TextView
+                    style="@style/loginScreenHints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Full Name"
+                    android:textStyle="normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/bg_edit_text_gray"
+                    android:orientation="horizontal"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="@dimen/padding_small">
+
+                    <co.ke.bsl.util.CustomEditText
+                        android:id="@+id/etfullname"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:breakStrategy="balanced"
+                        android:fitsSystemWindows="true"
+                        android:gravity="top"
+                        android:inputType="textMultiLine"
+                        android:padding="5dp"
+                        android:singleLine="false" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/margin_medium">
+
+                    <TextView
+                        style="@style/loginScreenHints"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textStyle="normal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/bg_edit_text_gray"
+                        android:orientation="horizontal"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="@dimen/padding_small">
+
+                        <EditText
+                            android:id="@+id/etemail"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="2dp"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:breakStrategy="balanced"
+                            android:fitsSystemWindows="true"
+                            android:gravity="top"
+                            android:inputType="textMultiLine"
+                            android:padding="5dp"
+                            android:singleLine="false" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/margin_medium">
+
+                    <TextView
+                        style="@style/loginScreenHints"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Phone Number:"
+                        android:textStyle="normal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/bg_edit_text_gray"
+                        android:orientation="horizontal"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="@dimen/padding_small">
+
+                        <EditText
+                            android:id="@+id/etmesskage"
+                            android:layout_width="fill_parent"
+                            android:layout_height="120dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="2dp"
+                            android:backgroundTint="@color/colorPrimaryDark"
+                            android:breakStrategy="balanced"
+                            android:fitsSystemWindows="true"
+                            android:gravity="top"
+                            android:inputType="number"
+                            android:padding="5dp"
+                            android:singleLine="false" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="@dimen/margin_medium">
+
+                    <TextView
+                        style="@style/loginScreenHints"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Message"
+                        android:textStyle="normal" />
+
+                    <EditText
+                        android:id="@+id/etmessage"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="2dp"
+                        android:backgroundTint="@color/colorPrimaryDark"
+                        android:breakStrategy="balanced"
+                        android:fitsSystemWindows="true"
+                        android:gravity="top"
+                        android:hint="Enter your message here"
+                        android:inputType="textMultiLine"
+                        android:padding="5dp"
+                        android:singleLine="false" />
+
+                    <Button
+                        android:id="@+id/btsubmit"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="22dp"
+                        android:background="#d67601"
+                        android:text="Submit"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <TextView
+                    style="@style/loginScreenHints"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:textStyle="normal" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

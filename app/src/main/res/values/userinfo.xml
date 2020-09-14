@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="userInfo_name">Name</string>
+    <string name="userInfo_phone">Phone</string>
+    <string name="userInfo_email">Email</string>
+    <string name="userInfo_password">Password</string>
+    <string name="userInfo_save">Save</string>
+    <string name="userInfo_reset">Reset</string>
+    <string name="userInfo_code">Code</string>
+    <string name="userInfo_notValidCannotSave">Cannot save the form because it contains illegal
+		values.</string>
+    <string name="userInfo_formSaved">Establishing connection \&#34;%1$s\&#34;</string>
+    <string name="userInfo_login">Login..</string>
+    <string name="userInfo_validateUserInfo">Validating..</string>
+<!--
+    <string name="userInfo_errorPersistingUserInfo">Could not save the user data.</string>
+-->
+<!--
+    <string name="userInfo_errorRetrievingUserInfo">Could not retrieve the user data.</string>
+-->
+    <string name="userInfoLogin_errorRetrievingUserInfo">Invalid username or password</string>
+    <string name="userInfoRegister_errorRetrievingUserInfo">Account already exist</string>
+<!--
+    <string name="userInfoSlot_errorRetrievingSlotInfo">No slots available for the mark entered</string>
+-->
+    <string name="userInfo_formSavedErro">Failed to connect to the server, server might be offline</string>
+	<string name="error_unspecied">Unspecified error.</string>
+	<string name="logging_error_loggingFailed">Connection to the server  failed.\n\nError details have been logged.\n\nError Message: \&#34;%1$s\&#34;</string>
+
+</resources>

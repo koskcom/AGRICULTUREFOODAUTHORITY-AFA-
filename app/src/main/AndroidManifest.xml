@@ -1,0 +1,628 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="co.ke.bsl"
+    android:installLocation="preferExternal"
+    android:versionCode="23"
+    android:versionName="AFA vs 0.8">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:name=".AFA"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:testOnly="false"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:icon">
+
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/actions" />
+
+        <service
+            android:name=".services.DataSetupService"
+            android:enabled="true"
+            android:exported="false"
+            android:icon="@drawable/ic_info"
+            android:label="@string/service_name"
+            android:stopWithTask="false">
+
+        </service>
+
+        <!--<service android:name=".services.FirebaseService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>-->
+
+        <receiver android:name=".receivers.DataBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.media.action.DISPLAY_NOTIFICATION" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".ui.common.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.activities.LoginActivity"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.common.DashboardActivity"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.CreateCaneCensusActivity"
+            android:label="New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.components.FruitsVegetablesExportersDeskVettingChecklistActivity"
+            android:label="New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.components.HCDHorticulturalCropsColdStorageActivity"
+            android:label="New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.components.HCDColdRoomTemperaturesRecordsActivity"
+            android:label="New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.components.FCDCottonGinneryInspectionActivity"
+            android:label="New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.components.FCDCottonLintClassingReportActivity"
+            android:label="New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.components.PersonalHygieneInspectionActivity"
+            android:label="New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.components.FruitVegetableConsolidatorsDeskvettingChecklistActivity"
+            android:label="New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.components.HCDMangoQualityInspectionChecklistActivity"
+            android:label="New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.components.HCDAvocadoQualityInspectionChecklistActivity"
+            android:label="New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.FoodCropExportActivity"
+            android:label="New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.FoodCropRecylerListActivity"
+            android:label="New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.components.FCDSisalFactoryInspectionConformityAssessmentActivity"
+            android:label="New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.components.FCDCottonBuyingStoreInspectionActivity"
+            android:label="New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.components.FoodWareHouseActivity"
+            android:label="New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.FoodWareHouseActivityList"
+            android:label="New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.components.FCDSisalSpinningFactoryInspectionConformityAssessmentActivity"
+            android:label="New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.components.CoffeeCommercialMarketingAgentActivity"
+            android:label="Coffee Commercial New Record"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.CoffeePulpingStationPSLActivity"
+            android:label="Coffee Pulping"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.CoffeeManagementAgentActivity"
+            android:label="Coffee management"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.components.HCDFlowersConsolidatorsActivity"
+            android:label="Flower COnsolidators"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.components.HCDNurseryInspectionActivity"
+            android:label="HCD Nursery Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.components.HCDParkhouseWarehouseActivity"
+            android:label="HCD Nursery Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.CaneCensusListActivity"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.SugarSurveyPricesActivity"
+            android:label="Sugar Survey Prices"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.TeaPackerAcivity"
+            android:label="Tea Packer Activity"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.TeaBuyerImporterExporterActivity"
+            android:label="Tea Packer Activity"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.DailyReturnsInpectionActivity"
+            android:label="Daily returns Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.HarvestReturnsInspectionActivity"
+            android:label="Harvest Returns Inspection"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.WholesaleActivity"
+            android:label="Wholesale "
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.IndustryAgriculturalProductionActivity"
+            android:label="Wholesale "
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.SugarMollasesProductionActivity"
+            android:label="Wholesale "
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.RetailActivity"
+            android:label="Retail "
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.SugarMillLicenceComplianceActivity"
+            android:label="Sugar mill "
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.CaneProductionDeliveriesInOutgrowersActivity"
+            android:label="Cane Production Deliveries In Outgrowers"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.LicenseConformanceAssessementActivity"
+            android:label="Licence conformance assessment"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.activities.ProfileActivity"
+            android:label="Profile"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.RetailPricesSurveyListActivity"
+            android:label="Retail List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.TeaPackerList"
+            android:label="Teapacker List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.TeaWarehouseManList"
+            android:label="Teawarehouseman List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.HorticultureNurseryInspectionList"
+            android:label="Horticulture Nursery Inspection List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.HorticulturalProduceTransportationList"
+            android:label="Horticulture Produce Transportation List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.HorticulturalPackhouseWarehouseList"
+            android:label="Horticulture Packhouse Warehouse List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.HorticulturalCropsExportLicenceList"
+            android:label="Horticultural Crops Export Licence List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.HorticulturalFlowerConsolidatorsList"
+            android:label="Horticultural Flower Consolidators List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.FruitsAndVegetablesConsolidatorsList"
+            android:label="Fruits And Vegetables Consolidators List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.HorticulturalFlowerExportersList"
+            android:label="Horticultural Flower Exporters List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.FruitsAndVegetablesExportersList"
+            android:label="Fruits And Vegetables Exporters List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.AvocadoQualityInspectionList"
+            android:label="Avocado Quality Inspection List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.MangoQualityInspectionList"
+            android:label="Mango Quality Inspection List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.ColdRoomTemperatureList"
+            android:label="Cold Room Temperature Records List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.PersonalHygieneList"
+            android:label="Personal Hygiene List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.HorticulturalCropsColdStorageList"
+            android:label="Horticultural Crops Cold Storage List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.CoffeeNurseryCertificateList"
+            android:label="Coffee Nursery Certificate Inspection List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.CoffeePulpingStationATEList"
+            android:label="Coffee Pulping Station (ATE) List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.CoffeePulpingStationPSLList"
+            android:label="Coffee Pulping Station (PSL) List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.CoffeeMillerLicenceList"
+            android:label="Coffee Miller Licence List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.CoffeeManagementAgentList"
+            android:label="Coffee Management Agent List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.CoffeeGrowerMarketingAgentList"
+            android:label="Coffee Grower Marketing Agent List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.CoffeeCommercialMarketingAgentList"
+            android:label="Coffee Commercial Marketing Agent List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.CoffeeExporterDealerInspectionList"
+            android:label="Coffee Exporter/Dealer Inspection List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.NutsAndOilsSurveyList"
+            android:label="Nuts And Oils Market Price Survey List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.CottonBuyingStoreInspectionList"
+            android:label="Cotton Buying Store Inspection List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.SisalFactoryInspectionList"
+            android:label="Sisal Factory Inspection List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.CottonGinneryInspectionList"
+            android:label="Cotton Ginnery Inspection List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.CottonLintClassingReportList"
+            android:label="Cotton Lint Classing Report List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.WholesalePricesSurveyListActivity"
+            android:label="Wholesale List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.CoffeeNurseryCertificateActivity"
+            android:label="Coffee Nursery Cert"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.SugarMillLicenceComplianceListActivity"
+            android:label="Sugar mill list"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.PyrethrumInspectionListActivity"
+            android:label="Pyrethrum Inspection list"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.PyrethrumInspectionActivity"
+            android:label="Pyrethrum Inspection list"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.TeaWarehouseManInspectionChecklistActivity"
+            android:label="Tea Warehouseman Inspection list"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.PulpingStationLicenseApplicationActivity"
+            android:label="Pulping Station License Application"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.CoffeeMillerLicenceApplicationActivity"
+            android:label="Coffee Miller License Application"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.CoffeeGrowerMarketingAgentActivity"
+            android:label="Coffee Grower Marketing Agent"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.CoffeeExporterDealerInspectionActivity"
+            android:label="Coffee Grower Marketing Agent"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.HorticultureFlowerExporterDeskVettingActivity"
+            android:label="Coffee Grower Marketing Agent"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.HorticultureProduceTransportationActivity"
+            android:label="Coffee Grower Marketing Agent"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.HorticultureLicenceFarmInspectionActivity"
+            android:label="Coffee Grower Marketing Agent"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.FoodProcessingInspectionActivity"
+            android:label="Food Processing activity"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.FoodProcessingInspectionList"
+            android:label="Food Processing activity List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+        <activity
+            android:name=".ui.views.activities.SisalSpinningInsList"
+            android:label="@string/Sisal_Spinning_Inspection_List"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.views.activities.components.NOCDMarketPriceSurveyActivity"
+            android:label="Coffee Grower Marketing Agent"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.activities.FeedbackActivity"
+            android:label="Feedback"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.activities.AboutUs"
+            android:label="Feedback"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".ui.activities.HelpCenter"
+            android:label="Help Center"
+            android:screenOrientation="user"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+
+
+        <provider
+            android:name=".util.GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

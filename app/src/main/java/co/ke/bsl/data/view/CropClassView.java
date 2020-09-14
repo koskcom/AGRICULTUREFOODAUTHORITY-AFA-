@@ -1,0 +1,17 @@
+package co.ke.bsl.data.view;
+
+public class CropClassView {
+    public CropClassView(String name) {
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    private String name;
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AFA-NavigationDrawer.iml" filepath="$PROJECT_DIR$/AFA-NavigationDrawer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/AFA-NavigationDrawer-app.iml" filepath="$PROJECT_DIR$/app/AFA-NavigationDrawer-app.iml" group="AFA-NavigationDrawer/app" />
+      <module fileurl="file://$PROJECT_DIR$/AndroidStudioProjects-AFA-NavigationDrawer.iml" filepath="$PROJECT_DIR$/AndroidStudioProjects-AFA-NavigationDrawer.iml" group="AFA-NavigationDrawer" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fruits_Vegetables_Exporters_Desk_Vetting_Checklist">Fruits Vegetables Exporters Desk Vetting Checklist</string>
+    <string name="avacado_quality_inspection">Avocado Quality Inspection Checklist</string>
+    <string name="horticultural_Crops_Cold_Storage_Register">Horticultural Crops Cold Storage Register</string>
+    <string name="mango_inspection">Mango Quality Inspection Checklist</string>
+    <string name="horticultural_Crops_Cold_Storage">Horticultural Crops Cold Storage</string>
+    <string name="horticultural_Crops_Cold_Storage_in">Horticultural Crops Cold Storage In</string>
+    <string name="horticultural_Crops_Cold_Storage_charges">Horticultural Crops Cold Storage Charges</string>
+    <string name="cotton_buying_store">Cotton Buying Store Inspection Conformity Assessment</string>
+    <string name="sisal_factory_inspection">Sisal Factory Inspection Conformity Assessment</string>
+</resources>

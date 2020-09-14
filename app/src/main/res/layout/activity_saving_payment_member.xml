@@ -1,0 +1,94 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.ke.bsl.sisdo.activity.GroupSavingsPaymentActivity" >
+
+    <LinearLayout
+        android:id="@+id/group_saving_form"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/background1"
+        android:orientation="vertical" >
+           <TextView
+            android:id="@+id/group_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="15dp"
+            android:textColor="#262bbb" />
+           
+          <TextView
+            android:id="@+id/saving_label"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/saving_label" />
+
+        <Spinner
+            android:id="@+id/saving"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!-- <include layout="@layout/title_bar" /> -->
+
+        <!-- <TextView
+            android:id="@+id/phonelabel"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/phoneno" />
+
+        <EditText
+            android:id="@+id/phoneno"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Group Leader Phone Number"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/groupLeadePhoneNumber"
+            style="@style/CustomAddLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="@string/group_loanphone_administration" />
+
+        <EditText
+            android:id="@+id/phone"
+            style="@style/CustomEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:hint="Group Total Amount"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/saveLoanBtn"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:onClick="buttonClickListener"
+            android:text="@string/group_loan_save" />
+
+        <Button
+            android:id="@+id/cancelLoanBtn"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:onClick="buttonClickListener"
+            android:text="@string/group_loan_save" /> -->
+    </LinearLayout>
+
+</ScrollView>
